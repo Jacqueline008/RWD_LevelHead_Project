@@ -1,0 +1,194 @@
+#bg_test{
+    position: relative;
+    top:200px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+#footer{
+
+}
+
+/*当用户购物车是空的时候显示的区域*/
+/*可能显示的空购物车区域 begin*/
+#emptyArea{
+    width:970px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top:120px;
+}
+#emptyAreaLeft{
+    float: left;
+    width:400px;
+    height: 400px;
+}
+#emptyAreaLeft img{
+    position: relative;
+    width:100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    top:150px;
+}
+
+#emptyAreaRight{
+    float: right;
+    width:500px;
+    height:400px;
+}
+#emptyAreaRight p{
+    position: relative;
+    top:150px;
+    font-family:'微软雅黑';
+    font-size: 18px;
+}
+#emptyAreaRight a{
+    text-decoration: none;
+}
+#emptyAreaRight a:link{
+    color:#547abb;
+}
+#emptyAreaRight a:visited{
+    color:#547abb;
+}
+#emptyAreaRight a:hover{
+    color:#000000;
+}
+/*可能显示的空购物车区域 end*/
+
+/*当用户购物车有内容时显示的区域*/
+#showShoppingCar{
+    width:970px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top:120px;
+    padding: 0;
+    box-shadow: -10px 10px 10px #CCCCCC;
+    border-radius:5px;
+}
+#showShoppingCar .th{
+    border-top:1px dashed grey;
+    border-bottom:1px dashed grey;
+    background-color: #ededed;
+    font-weight: 900;
+}
+tr{
+    text-align: center;
+}
+.td1{
+    width: 220px;
+}
+.td2{
+    width: 550px;
+}
+.td3,.td4{
+    width: 100px;
+}
+
+
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /*当用户购物车是空的时候显示的区域*/
+    /*可能显示的空购物车区域 begin*/
+    #emptyArea{
+        width:730px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        position: relative;
+        top:120px;
+    }
+    #emptyAreaLeft{
+        float: left;
+        width:300px;
+        height: 400px;
+    }
+    #emptyAreaRight{
+        float: right;
+        width:430px;
+        height:400px;
+    }
+    /*可能显示的空购物车区域 end*/
+
+    /*当用户购物车有内容时显示的区域*/
+    #showShoppingCar{
+        width:750px;
+    }
+    .td1{
+        width: 220px;
+    }
+    .td2{
+        width: 370px;
+    }
+    .td3,.td4{
+        width: 80px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /*当用户购物车是空的时候显示的区域*/
+    /*可能显示的空购物车区域 begin*/
+    #emptyArea{
+        width:90%;
+        height: 300px;
+        margin: 0 auto;
+        top:80px;
+    }
+    #emptyAreaLeft{
+        display: none;
+    }
+    #emptyAreaRight{
+        float: right;
+        width:80%;
+        height:300px;
+        margin: 0 auto;
+        margin-right: 20px;
+    }
+    #emptyAreaRight p{
+        top:60px;
+        font-size: 16px;
+    }
+    /*可能显示的空购物车区域 end*/
+
+    /*当用户购物车有内容时显示的区域*/
+    #showShoppingCar{
+        width:330px;
+        font-size: 14px;
+        top:80px;
+    }
+    .td1 img{
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+    }
+    .td1{
+        width:130px;
+    }
+    .td2{
+        width: 100px;
+        font-size: 12px;
+        height: 120px;
+    }
+    .td3,.td4{
+        width: 50px;
+    }
+}
+
+

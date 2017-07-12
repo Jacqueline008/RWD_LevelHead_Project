@@ -1,0 +1,468 @@
+#bg_test{
+    position: relative;
+    top:250px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+#footer{
+    top:250px;
+}
+/**************轮播组件***********************/
+.carousel{
+    height: 500px;
+    position: relative;
+    top:100px;
+}
+.carousel .item{
+    height: 500px;
+    background-color: #000;
+}
+.carousel img{
+    width: 100%;
+}
+
+/*****************热门品牌列表**************************/
+/*最外面的容器*/
+#menu_brands{
+    width:100%;
+    height:520px;
+    background-color: #ededed;
+    position: relative;
+    top:140px;
+}
+.hot-brands{
+    text-align: center;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    padding-top: 30px;
+    letter-spacing: 5pt;
+    font-size: 27px;
+    height: 70px;
+    margin: 0;
+}
+/*承装品牌的容器*/
+.mb-container{
+    padding: 0;
+    height: 450px;
+    margin: 0 auto;
+}
+/*各个品牌*/
+.mb-container .brands{
+    width:20%;
+    height: 225px;
+    float:left;
+}
+/*每个品牌中的小圆形*/
+.brands .inner{
+    display: block;
+    width:130px;
+    height:130px;
+    border-radius: 65px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+.mb1{
+    background-image:url(../images/sumsung.jpg);
+}
+.mb2{
+    background-image:url(../images/sony.png);
+}
+.mb3{
+    background-image:url(../images/haier.jpg);
+}
+.mb4{
+    background-image:url(../images/haixin.jpg);
+}
+.mb5{
+    background-image:url(../images/philips.jpg);
+}
+.mb6{
+    background-image:url(../images/kangjia.jpg);
+}
+.mb7{
+    background-image:url(../images/chuangwei.jpg);
+}
+.mb8{
+    background-image:url(../images/tcl.jpg);
+}
+.mb9{
+    background-image:url(../images/lg.jpg);
+}
+.mb10{
+    background-image:url(../images/changhong.jpg);
+}
+
+/**********************12个商品容器************************/
+/*总的容器*/
+#products_container{
+    background-color: #fff;
+    position: relative;
+    top:180px;
+    padding: 0;
+}
+/*行容器*/
+#products_container .row{
+    margin: 0;
+}
+/*列容器*/
+#products_container .row .pd{
+    height:450px;
+    padding: 0;
+}
+/*列中的商品容器*/
+.pd-inner{
+    width:240px;
+    height: 430px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.pd-inner:hover{
+    border:1px solid #1b6d85;
+    box-shadow: 10px 10px 10px #ededed;
+    border-radius: 5px;
+}
+/*商品容器中的图片*/
+.pd-inner .pd-pic{
+    width:220px;
+    height:220px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.pd-inner .pd-pic a img{
+    width:220px;
+    height: 220px;
+}
+/*商品容器中的价格*/
+.pd-inner .pd-sellprice{
+    width:220px;
+    height: 28px;
+    background-color: white;
+    margin: 0 auto;
+    color: #e4393c;
+    font-weight: 400;
+    font-family: Verdana;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.pd-inner .pd-sellprice span{
+    width:100px;
+}
+/*商品容器中的描述*/
+.pd-inner .pd-des{
+    width:220px;
+    height: 70px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size:14px;
+    font-family: "微软雅黑";
+}
+/*商品容器中的月销量*/
+.pd-inner .pd-saleaccount{
+    width:220px;
+    height: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: "微软雅黑";
+    font-size:14px;
+    color:#999;
+}
+.pd-inner .pd-saleaccount .pd-des-i{
+    color: #ffaa71;
+}
+
+/******************上一页下一页按钮********************************/
+/*button_container  begin*/
+#button_container{
+    height: 35px;
+    position: relative;
+    top:200px;
+}
+.btn-container-inner{
+    width: 50%;
+    height: 35px;
+    margin:0 auto;
+}
+/*上一页按钮*/
+#toLast{
+    width:70px;
+    height:35px;
+    border:none;
+    font-family:'微软雅黑';
+    font-size:16px;
+    color:#666;
+    border-radius:5px;
+    background-color:#ededed;
+    transition:background-color 0.4s ease;
+    outline:none;
+    float: left;
+}
+#toLast:hover{
+    background-color:#FDFDFD;
+}
+/*下一页按钮*/
+#toNext{
+    width:70px;
+    height:35px;
+    border:none;
+    font-family:'微软雅黑';
+    font-size:16px;
+    color:#666;
+    border-radius:5px;
+    background-color:#ededed;
+    transition:background-color 0.4s ease;
+    outline:none;
+    float: right;
+}
+#toNext:hover{
+    background-color:#FDFDFD;
+}
+/*button_container  end*/
+
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+    /**************轮播组件***********************/
+    .carousel{
+        height: 450px;
+    }
+    .carousel .item{
+        height: 450px;
+    }
+    /**********************12个商品容器************************/
+    #products_container{
+        top:180px;
+        padding: 0;
+    }
+    #products_container .row{
+        margin: 0;
+    }
+    /*列容器*/
+    #products_container .row .pd{
+        height:420px;
+        padding: 0;
+    }
+    /*列中的商品容器*/
+    .pd-inner{
+        width:220px;
+        height: 400px;
+        margin-top: 10px;
+    }
+    /*商品容器中的图片*/
+    .pd-inner .pd-pic{
+        width:200px;
+        height:200px;
+        margin-top: 10px;
+    }
+    .pd-inner .pd-pic a img{
+        width:200px;
+        height: 200px;
+    }
+    /*商品容器中的价格*/
+    .pd-inner .pd-sellprice{
+        width:200px;
+    }
+    .pd-inner .pd-sellprice span{
+        width:100px;
+    }
+    /*商品容器中的描述*/
+    .pd-inner .pd-des{
+        width:200px;
+    }
+    /*商品容器中的月销量*/
+    .pd-inner .pd-saleaccount{
+        width:200px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /**************轮播组件***********************/
+    .carousel{
+        height: 350px;
+    }
+    .carousel .item{
+        height: 350px;
+    }
+
+    /*****************热门品牌列表**************************/
+    /*最外面的容器*/
+    #menu_brands{
+        height:420px;
+    }
+    /*承装品牌的容器*/
+    .mb-container{
+        padding: 0;
+        height: 350px;
+        margin: 0 auto;
+    }
+    /*各个品牌*/
+    .mb-container .brands{
+        height: 175px;
+    }
+    /*每个品牌中的小圆形*/
+    .brands .inner{
+        width:100px;
+        height:100px;
+        border-radius: 50px;
+        margin-top: 40px;
+    }
+    /**********************12个商品容器************************/
+    #products_container{
+        top:180px;
+        padding: 0;
+    }
+    #products_container .row{
+        margin: 0;
+    }
+    /*列容器*/
+    #products_container .row .pd{
+        height:370px;
+        padding: 0;
+    }
+    /*列容器中的商品容器*/
+    .pd-inner{
+        width:220px;
+        height: 350px;
+        margin-top: 10px;
+    }
+    /*商品容器中的图片*/
+    .pd-inner .pd-pic{
+        margin-top: 5px;
+    }
+    /*商品容器中的价格*/
+    .pd-inner .pd-sellprice{
+        margin-top: 5px;
+    }
+    /*商品容器中的描述*/
+    .pd-inner .pd-des{
+        margin-top: 5px;
+    }
+    /*商品容器中的月销量*/
+    .pd-inner .pd-saleaccount{
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /**************轮播组件***********************/
+    .carousel{
+        height: 165px;
+        top:70px;
+    }
+    .carousel .item{
+        height: 165px;
+    }
+
+    /*****************热门品牌列表**************************/
+    /*最外面的容器*/
+    #menu_brands{
+        height:230px;
+        top:80px;
+    }
+    .hot-brands{
+        font-weight: 400;
+        padding-top: 10px;
+        letter-spacing: 3pt;
+        font-size: 18px;
+        height: 30px;
+    }
+    /*承装品牌的容器*/
+    .mb-container{
+        padding: 0;
+        height: 200px;
+        margin: 0 auto;
+    }
+    /*各个品牌*/
+    .mb-container .brands{
+        height: 100px;
+    }
+    /*每个品牌中的小圆形*/
+    .brands .inner{
+        width:60px;
+        height:60px;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
+    /**********************12个商品容器************************/
+    #products_container{
+        top:100px;
+        padding: 0;
+    }
+    #products_container .row{
+        margin: 0;
+    }
+    /*列容器*/
+    #products_container .row .pd{
+        height:240px;
+        padding: 0;
+    }
+    /*列容器中的商品容器*/
+    .pd-inner{
+        width:170px;
+        height: 225px;
+        margin-top: 10px;
+    }
+    /*商品容器中的图片*/
+    .pd-inner .pd-pic{
+        width:160px;
+        height:140px;
+        margin-top: 0px;
+    }
+    .pd-inner .pd-pic a img{
+        width:160px;
+        height: 160px;
+    }
+    /*商品容器中的价格*/
+    .pd-inner .pd-sellprice{
+        width:160px;
+        height: 20px;
+        font-weight: 400;
+        font-family: Verdana;
+        font-size: 16px;
+        margin-top: 0;
+    }
+    /*商品容器中的描述*/
+    .pd-inner .pd-des{
+        width:160px;
+        height: 50px;
+        font-size:12px;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    /*商品容器中的月销量*/
+    .pd-inner .pd-saleaccount{
+        width:160px;
+        height: 12px;
+        font-size:10px;
+        margin-top: 0px;
+    }
+    /******************上一页下一页按钮********************************/
+    /*button_container  begin*/
+    #button_container{
+        top:150px;
+    }
+
+    #footer{
+        top:190px;
+        padding-bottom: 30px;
+    }
+}
+
+

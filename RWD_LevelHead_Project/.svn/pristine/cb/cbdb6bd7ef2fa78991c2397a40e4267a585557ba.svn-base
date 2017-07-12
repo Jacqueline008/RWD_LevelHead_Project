@@ -1,0 +1,128 @@
+#bg_test{
+    position: relative;
+    top:200px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+#footer{
+
+}
+
+/***************注册失败容器**********************/
+/*注册失败container*/
+#registerError_container{
+    width:70%;
+    height: 450px;
+    background-color:#FDFDFD;
+    margin: 0px auto;
+    position: relative;
+    top:120px;
+    box-shadow: -10px 10px 10px #CCCCCC;
+    border-radius:5px;
+}
+/*注册失败内容*/
+#fail{
+    width:500px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+/*注册失败内容左侧*/
+#fail_left{
+    float: left;
+    width:80px;
+    height:80px;
+    background-image:url(../images/error.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:bottom;
+}
+/*注册失败内容右侧*/
+#fail_right{
+    float: right;
+    width:420px;
+    height:80px;
+}
+#fail_right_up{
+    margin: 0px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    font-size: 33px;
+    letter-spacing: 7px;
+    font-weight: 600;
+    text-align: center;
+}
+#fail_right_down{
+    margin: 0px;
+    padding-top: 15px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    font-size: 18px;
+    color: #ef7662;
+    font-weight: 400;
+    text-align: center;
+}
+#fail_right_down a{
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: 400;
+}
+#fail_right_down a:link{
+    color:#547abb;
+}
+#fail_right_down a:visited{
+    color:#547abb;
+}
+#fail_right_down a:hover{
+    color:black;
+}
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /***************注册失败容器**********************/
+    /*注册失败container*/
+    #registerError_container{
+        width:90%;
+        height: 300px;
+        top:120px;
+        box-shadow:none;
+    }
+    /*注册失败内容*/
+    #fail{
+        width:300px;
+        height: 60px;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+    /*注册失败内容左侧*/
+    #fail_left{
+        display: none;
+    }
+    /*注册失败内容右侧*/
+    #fail_right{
+        width:300px;
+        height:60px;
+    }
+    #fail_right_up{
+        font-size: 23px;
+        letter-spacing: 7px;
+    }
+    #fail_right_down{
+        font-size: 16px;
+    }
+}

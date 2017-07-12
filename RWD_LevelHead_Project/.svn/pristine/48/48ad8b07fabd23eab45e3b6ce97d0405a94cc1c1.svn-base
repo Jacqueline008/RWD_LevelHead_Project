@@ -1,0 +1,366 @@
+#bg_test{
+    position: relative;
+    top:150px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+/******************/
+.fl{
+    float:left;
+}
+.fr{
+    float: right;
+}
+/**********************用户信息表单*******************************************/
+/*总的容器*/
+#all-content{
+    width:85%;
+    height: 700px;
+    padding-top: 70px;
+    background-color:#FDFDFD;
+    margin:0 auto;
+    position:relative;
+    top:130px;
+    box-shadow: -10px 10px 10px #CCCCCC;
+    border-radius:5px;
+    font-family:'微软雅黑';
+}
+/*用户信息部分总的容器*/
+.info-content{
+    width:800px;
+    height:300px;
+    margin: 0 auto;
+    border:3px dashed grey;
+}
+/*用户信息左侧部分的容器 begin*/
+.info-left{
+    width:300px;
+    height: 260px;
+    border-right:3px dashed grey;
+    padding-top: 30px;
+}
+/*用户旧图片*/
+.userOldPic{
+    width:130px;
+    height: 130px;
+    border-radius:65px;
+    margin-left: 90px;
+}
+/*上传图片按钮*/
+.userNewPic-content{
+    border:none;
+    width: 160px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #949494;
+    font-family:'微软雅黑';
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+    text-align: center;
+    line-height: 30px;
+}
+.userNewPic-content:hover{
+    background-color:lightgrey;
+    color:black;
+}
+.userNewPic{
+    width:160px;
+    height: 30px;
+    position: relative;
+    top:-37px;
+    opacity: 0;
+}
+/*保存头像按钮*/
+.userNewPicSubmit{
+    border:none;
+    background-color:#547abb;
+    margin-top: 20px;
+    margin-left: 70px;
+    width:160px;
+    height:30px;
+    font-family:'微软雅黑';
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+}
+.userNewPicSubmit:hover{
+    background-color:lightsteelblue;
+    color:black;
+}
+/*用户信息左侧部分的容器 end/
+
+/*用户信息右侧部分的容器 begin*/
+/*右侧用户信息列表*/
+.info-right{
+    width:497px;
+    height:260px;
+    padding-top: 15px;
+    font-family:'微软雅黑';
+    font-size:16px;
+}
+.info-right .title,.theUserName,.theUserTel,.theUserAddr,.submit{
+    width:497px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 80px;
+}
+/*用户名 绑定手机*/
+.info-right .UserName,.UserTel{
+    width:220px;
+    height: 20px;
+    border-radius: 5px;
+    border:1px dashed grey;
+    line-height: 20px;
+    font-size:16px;
+    margin-left: 30px;
+    text-align: center;
+}
+/*收货地址*/
+.info-right .theUserAddr{
+    height: 50px;
+    padding-top: 15px;
+}
+.info-right span{
+    position: relative;
+    top:-30px;
+}
+.info-right .UserAddr{
+    width:220px;
+    height: 40px;
+    margin-left: 30px;
+    border: 1px dashed grey;
+    border-radius: 5px;
+    text-align: center;
+    font-family:'微软雅黑';
+    font-size:16px;
+}
+/*提交按钮*/
+.inforFormRightsubmit{
+    margin-top: 10px;
+}
+.inforFormRightsubmit input{
+    border:none;
+    background-color:#ef7662;
+    width:320px;
+    height:30px;
+    font-family:'微软雅黑';
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+    margin-left: 80px;
+}
+.inforFormRightsubmit input:hover{
+    background-color:#547abb;
+}
+/*用户信息右侧部分的容器 end*/
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /**********************用户信息表单*******************************************/
+    #all-content {
+        width: 95%;
+        padding-top: 40px;
+        top:100px;
+    }
+    /*用户信息部分总的容器*/
+    .info-content{
+        width:700px;
+    }
+    /*用户信息左侧部分的容器 begin*/
+    .info-left{
+        width:200px;
+    }
+    /*用户旧图片*/
+    .userOldPic{
+        margin-left: 40px;
+    }
+    /*上传图片按钮*/
+    .userNewPic-content{
+        margin-left: 20px;
+    }
+    /*保存头像按钮*/
+    .userNewPicSubmit{
+        margin-left: 20px;
+    }
+    /*用户信息左侧部分的容器 end/
+
+    /*用户信息右侧部分的容器 begin*/
+    .info-right .title,.theUserName,.theUserTel,.theUserAddr,.submit{
+        width:417px;
+    }
+    /*用户信息右侧部分的容器 end*/
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /**********************用户信息表单*******************************************/
+    /*总的容器*/
+    #all-content{
+        width:95%;
+        height: 700px;
+        padding-top: 10px;
+        background-color:#FDFDFD;
+        margin:0 auto;
+        position:relative;
+        top:80px;
+        box-shadow:none;
+        border-radius:5px;
+        font-family:'微软雅黑';
+    }
+    /*用户信息部分总的容器*/
+    .info-content{
+        width:300px;
+        height:550px;
+        margin: 0 auto;
+        border:3px dashed grey;
+    }
+    /*用户信息左侧部分的容器 begin*/
+    .info-left{
+        width:300px;
+        height: 230px;
+        border-right:0px dashed grey;
+        padding-top: 30px;
+        float:none;
+    }
+    /*用户旧图片*/
+    .userOldPic{
+        width:100px;
+        height: 100px;
+        border-radius:65px;
+        margin-left: 90px;
+    }
+    /*上传图片按钮*/
+    .userNewPic-content{
+        border:none;
+        width: 160px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 70px;
+        background-color: #949494;
+        font-family:'微软雅黑';
+        color:white;
+        font-size:16px;
+        border-radius:5px;
+        transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+        text-align: center;
+        line-height: 30px;
+    }
+    .userNewPic-content:hover{
+        background-color:lightgrey;
+        color:black;
+    }
+    .userNewPic{
+        width:160px;
+        height: 30px;
+        position: relative;
+        top:-37px;
+        opacity: 0;
+    }
+    /*保存头像按钮*/
+    .userNewPicSubmit{
+        border:none;
+        background-color:#547abb;
+        margin-top: 20px;
+        margin-left: 70px;
+        width:160px;
+        height:30px;
+        font-family:'微软雅黑';
+        color:white;
+        font-size:16px;
+        border-radius:5px;
+        transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+    }
+    .userNewPicSubmit:hover{
+        background-color:lightsteelblue;
+        color:black;
+    }
+    /*用户信息左侧部分的容器 end/
+
+    /*用户信息右侧部分的容器 begin*/
+    /*右侧用户信息列表*/
+    .info-right{
+        width:300px;
+        height:260px;
+        padding-top: 15px;
+        font-family:'微软雅黑';
+        font-size:14px;
+        float:none;
+        border-top:3px dashed grey;
+    }
+    .info-right .title,.theUserName,.theUserTel,.theUserAddr,.submit{
+        width:280px;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 10px;
+    }
+    /*用户名 绑定手机*/
+    .info-right .UserName,.UserTel{
+        width:200px;
+        height: 20px;
+        border-radius: 5px;
+        border:1px dashed grey;
+        line-height: 20px;
+        font-size:16px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    /*收货地址*/
+    .info-right .theUserAddr{
+        height: 50px;
+        padding-top: 15px;
+    }
+    .info-right span{
+        position: relative;
+        top:-30px;
+    }
+    .info-right .UserAddr{
+        width:200px;
+        height: 40px;
+        margin-left: 10px;
+        border: 1px dashed grey;
+        border-radius: 5px;
+        text-align: center;
+        font-family:'微软雅黑';
+        font-size:14px;
+    }
+    /*提交按钮*/
+    .inforFormRightsubmit{
+        margin-top: 10px;
+    }
+    .inforFormRightsubmit input{
+        border:none;
+        background-color:#ef7662;
+        width:280px;
+        height:30px;
+        font-family:'微软雅黑';
+        color:white;
+        font-size:16px;
+        border-radius:5px;
+        transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+        margin-left: 10px;
+    }
+    .inforFormRightsubmit input:hover{
+        background-color:#547abb;
+    }
+    /*用户信息右侧部分的容器 end*/
+}
+
+

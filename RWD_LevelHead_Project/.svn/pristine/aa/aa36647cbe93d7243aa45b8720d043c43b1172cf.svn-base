@@ -1,0 +1,10 @@
+//给信息容器左侧的竖着的图片列表添加colorbox效果
+$("#product_info_left a").colorbox(
+    {		width:650,
+        height:550,
+        transition: 'elastic',
+        speed: 300,
+        current: '第{current}张/总{total}张',
+        slideshow: true
+    }
+);

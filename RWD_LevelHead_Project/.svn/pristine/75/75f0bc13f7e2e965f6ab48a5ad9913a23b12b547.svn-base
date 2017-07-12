@@ -1,0 +1,113 @@
+/*总的css样式*/
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/***********************网页上方固定不动的标头**********************/
+/*标头总背景*/
+#site-nav{
+    width:100%;
+    height:65px;
+    background-image:url(../images/bg.jpg);
+    position:fixed;
+    box-shadow:0px 5px 5px #CCC;
+    z-index:2000;
+}
+/*盛装标头中各内容的容器*/
+#site-nav .sn-container{
+    margin: 0 auto;
+    width: 1170px;
+    height:65px;
+}
+/*盛装标头中各内容的容器中的a标签的样式*/
+#site-nav .sn-container a{
+    position: relative;
+    top:13px;
+    font-family:'微软雅黑';
+    font-size:20px;
+    color:black;
+    text-decoration:none;
+    margin: 0 10px;
+}
+#site-nav .sn-container a:hover{
+    color:#547abb;
+}
+/*网站Logo*/
+#site-nav .sn-container .sn-logo{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size: 28px;
+}
+/*展示下拉菜单的图标*/
+#site-nav .sn-container .sn-showmenu{
+    display: none;
+}
+/*标头右侧的除了logo之外的快速导航*/
+#site-nav .sn-container .sn-quick-menu{
+    display: block;
+}
+
+
+
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #site-nav .sn-container{
+        width: 970px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #site-nav .sn-container{
+        width: 750px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /***********************网页上方固定不动的标头**********************/
+    /*标头总背景*/
+    #site-nav{
+        box-shadow:none;
+    }
+    /*盛装标头中各内容的容器*/
+    #site-nav .sn-container{
+        width: 100%;
+    }
+    /*盛装标头中各内容的容器中的a标签的样式*/
+    #site-nav .sn-container a{
+        display: block;
+        top:0px;
+        font-size:16px;
+        margin: 0 10px;
+    }
+    /*网站Logo*/
+    #site-nav .sn-container .sn-logo{
+        font-family:Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        top:20px;
+    }
+    /*展示下拉菜单的图标*/
+    #site-nav .sn-container .sn-showmenu{
+        display: block;
+    }
+    #site-nav .sn-container .sn-showmenu img{
+        width:30px;
+        height:26px;
+        position: relative;
+        top:20px;
+    }
+    /*标头右侧的除了logo之外的快速导航*/
+    #site-nav .sn-container .sn-quick-menu{
+        width:100%;
+        background-image:url(../images/bg.jpg);
+        float:right;
+        position: relative;
+        top:35px;
+        border-top:1px #ededed solid;
+        display: none;
+    }
+    .sn-quick-menu a{
+        height: 35px;
+        line-height:35px;
+    }
+}

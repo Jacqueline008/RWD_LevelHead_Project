@@ -1,0 +1,547 @@
+#bg_test{
+    position: relative;
+    top:250px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+#footer{
+    top:220px;
+}
+/******************/
+.fl{
+    float:left;
+}
+.fr{
+    float: right;
+}
+/**********************用户信息表单*******************************************/
+/*总的容器*/
+#all-content{
+    width:85%;
+    height: 380px;
+    padding-top: 70px;
+    background-color:#FDFDFD;
+    margin:0 auto;
+    position:relative;
+    top:130px;
+    box-shadow: -10px 10px 10px #CCCCCC;
+    border-radius:5px;
+    font-family:'微软雅黑';
+}
+/*用户信息部分总的容器*/
+.info-content{
+    width:800px;
+    height:300px;
+    margin: 0 auto;
+    border:3px dashed grey;
+}
+/*用户信息左侧部分的容器 begin*/
+.info-left{
+    width:300px;
+    height: 260px;
+    border-right:3px dashed grey;
+    padding-top: 30px;
+}
+/*用户旧图片*/
+.userOldPic{
+    width:130px;
+    height: 130px;
+    border-radius:65px;
+    margin-left: 90px;
+}
+/*上传图片按钮*/
+.userNewPic-content{
+    border:none;
+    width: 160px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #949494;
+    font-family:'微软雅黑';
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+    text-align: center;
+    line-height: 30px;
+}
+.userNewPic-content:hover{
+    background-color:lightgrey;
+    color:black;
+}
+.userNewPic{
+    width:160px;
+    height: 30px;
+    position: relative;
+    top:-37px;
+    opacity: 0;
+}
+/*保存头像按钮*/
+.userNewPicSubmit{
+    border:none;
+    background-color:#547abb;
+    margin-top: 20px;
+    margin-left: 70px;
+    width:160px;
+    height:30px;
+    font-family:'微软雅黑';
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+}
+.userNewPicSubmit:hover{
+    background-color:lightsteelblue;
+    color:black;
+}
+/*用户信息左侧部分的容器 end/
+
+/*用户信息右侧部分的容器 begin*/
+/*右侧用户信息列表*/
+.info-right{
+    width:497px;
+    height:260px;
+    padding-top: 15px;
+    font-family:'微软雅黑';
+    font-size:16px;
+}
+.info-right .title,.theUserName,.theUserTel,.theUserAddr,.submit{
+    width:497px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 80px;
+}
+/*用户名 绑定手机*/
+.info-right .UserName,.UserTel{
+    width:220px;
+    height: 20px;
+    border-radius: 5px;
+    border:1px dashed grey;
+    line-height: 20px;
+    font-size:16px;
+    margin-left: 30px;
+    text-align: center;
+}
+/*收货地址*/
+.info-right .theUserAddr{
+    height: 50px;
+    padding-top: 15px;
+}
+.info-right span{
+    position: relative;
+    top:-30px;
+}
+.info-right .UserAddr{
+    width:220px;
+    height: 40px;
+    margin-left: 30px;
+    border: 1px dashed grey;
+    border-radius: 5px;
+    text-align: center;
+    font-family:'微软雅黑';
+    font-size:16px;
+}
+/*提交按钮*/
+.inforFormRightsubmit{
+    margin-top: 10px;
+}
+.inforFormRightsubmit input{
+    border:none;
+    background-color:#ef7662;
+    width:320px;
+    height:30px;
+    font-family:'微软雅黑';
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+    margin-left: 80px;
+}
+.inforFormRightsubmit input:hover{
+    background-color:#547abb;
+}
+/*用户信息右侧部分的容器 end*/
+
+/******************************图片形式的导航******************************/
+#menu_pics_h1{
+    width:350px;
+    height: 50px;
+    /*background-color: grey;*/
+    margin: 0 auto;
+    position: relative;
+    top:180px;
+    font-size: 26px;
+    color: #555;
+}
+#menu_pics{
+    width:80%;
+    height:460px;
+    margin:0px auto;
+    position: relative;
+    top:200px;
+}
+#menu_pics a{
+    display: block;
+    width: 33%;
+    height: 220px;
+    background-color: gray;
+    float: left;
+    margin-bottom: 1%;
+    text-decoration: none;
+}
+.middle{
+    margin-left:0.5%;
+    margin-right: 0.5%;
+}
+/***图片背景***/
+#menu_a_tv,#menu_a_aircondition,#menu_a_refrigerator,#menu_a_washer,#menu_a_waterheater,#menu_a_kitchen{
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+/***图片中的黑色字幕***/
+#menu_a_tv #tv_div1,#menu_a_aircondition #aircondition_div1,#menu_a_refrigerator #refrigerator_div1,
+#menu_a_washer #washer_div1,#menu_a_waterheater #waterheater_div1,#menu_a_kitchen #kitchen_div1{
+    width:30%;
+    height:15%;
+    background-color:#333;
+    border-radius:15px;
+    margin:0 auto;
+    position:relative;
+    top:75%;
+    color:white;
+    font-size:18px;
+    font-family:'微软雅黑';
+    text-align:center;
+}
+#menu_a_tv #tv_div1 span,#menu_a_aircondition #aircondition_div1 span,#menu_a_refrigerator #refrigerator_div1 span,
+#menu_a_washer #washer_div1 span,#menu_a_waterheater #waterheater_div1 span,#menu_a_kitchen #kitchen_div1 span{
+    position: relative;
+    top:2px;
+}
+/***图片中的透明黑色遮罩***/
+#menu_a_tv #tv_div2,#menu_a_aircondition #aircondition_div2,#menu_a_refrigerator #refrigerator_div2,
+#menu_a_washer #washer_div2,#menu_a_waterheater #waterheater_div2,#menu_a_kitchen #kitchen_div2{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    color:white;
+    font-size:20px;
+    font-family:'微软雅黑';
+    padding-top: 0%;
+    text-align:center;
+    letter-spacing:10pt;
+    display: none;
+}
+#menu_a_tv #tv_div2 span,#menu_a_aircondition #aircondition_div2 span,#menu_a_refrigerator #refrigerator_div2 span,
+#menu_a_washer #washer_div2 span,#menu_a_waterheater #waterheater_div2 span,#menu_a_kitchen #kitchen_div2 span{
+    position: relative;
+    top:40%;
+    left:10px;
+}
+/*电视*/
+#menu_a_tv{
+    background-image:url(../images/tv.jpg);
+}
+#menu_a_tv #tv_div1{
+}
+#menu_a_tv #tv_div2{
+}
+/*空调*/
+#menu_a_aircondition{
+    background-image:url(../images/aircondition.jpg);
+}
+#menu_a_aircondition #aircondition_div1{
+}
+#menu_a_aircondition #aircondition_div2{
+}
+/*冰箱*/
+#menu_a_refrigerator{
+    background-image:url(../images/refrigerator.jpg);
+}
+#menu_a_refrigerator #refrigerator_div1{
+}
+#menu_a_refrigerator #refrigerator_div2{
+}
+/*洗衣机*/
+#menu_a_washer{
+    background-image:url(../images/washer.jpg);
+}
+#menu_a_washer #washer_div1{
+}
+#menu_a_washer #washer_div2{
+}
+/*热水器*/
+#menu_a_waterheater{
+    background-image:url(../images/waterheater.jpg);
+}
+#menu_a_waterheater #waterheater_div1{
+}
+#menu_a_waterheater #waterheater_div2{
+}
+/*厨房大电*/
+#menu_a_kitchen{
+    background-image:url(../images/kitchen.jpg);
+}
+#menu_a_kitchen #kitchen_div1{
+}
+#menu_a_kitchen #kitchen_div2{
+}
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /**********************用户信息表单*******************************************/
+    #all-content {
+        width: 85%;
+        padding-top: 40px;
+        top:100px;
+    }
+    /*用户信息部分总的容器*/
+    .info-content{
+        width:700px;
+    }
+    /*用户信息左侧部分的容器 begin*/
+    .info-left{
+        width:200px;
+    }
+    /*用户旧图片*/
+    .userOldPic{
+        margin-left: 40px;
+    }
+    /*上传图片按钮*/
+    .userNewPic-content{
+        margin-left: 20px;
+    }
+    /*保存头像按钮*/
+    .userNewPicSubmit{
+        margin-left: 20px;
+    }
+    /*用户信息左侧部分的容器 end/
+
+    /*用户信息右侧部分的容器 begin*/
+    .info-right .title,.theUserName,.theUserTel,.theUserAddr,.submit{
+        width:417px;
+    }
+    /*用户信息右侧部分的容器 end*/
+
+    /******************************图片形式的导航******************************/
+    #menu_pics{
+        height:380px;
+    }
+    #menu_pics a{
+        height: 180px;
+    }
+    /***图片中的黑色字幕***/
+    #menu_a_tv #tv_div1,#menu_a_aircondition #aircondition_div1,#menu_a_refrigerator #refrigerator_div1,
+    #menu_a_washer #washer_div1,#menu_a_waterheater #waterheater_div1,#menu_a_kitchen #kitchen_div1{
+        width:33%;
+        font-size:14px;
+    }
+    /***图片中的透明黑色遮罩***/
+    #menu_a_tv #tv_div2,#menu_a_aircondition #aircondition_div2,#menu_a_refrigerator #refrigerator_div2,
+    #menu_a_washer #washer_div2,#menu_a_waterheater #waterheater_div2,#menu_a_kitchen #kitchen_div2{
+        font-size:16px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /**********************用户信息表单*******************************************/
+    /*总的容器*/
+    #all-content{
+        width:100%;
+        height: 600px;
+        padding-top: 10px;
+        background-color:#FDFDFD;
+        margin:0 auto;
+        position:relative;
+        top:80px;
+        box-shadow:none;
+        border-radius:5px;
+        font-family:'微软雅黑';
+    }
+    /*用户信息部分总的容器*/
+    .info-content{
+        width:300px;
+        height:550px;
+        margin: 0 auto;
+        border:3px dashed grey;
+    }
+    /*用户信息左侧部分的容器 begin*/
+    .info-left{
+        width:300px;
+        height: 230px;
+        border-right:0px dashed grey;
+        padding-top: 30px;
+        float:none;
+    }
+    /*用户旧图片*/
+    .userOldPic{
+        width:100px;
+        height: 100px;
+        border-radius:65px;
+        margin-left: 90px;
+    }
+    /*上传图片按钮*/
+    .userNewPic-content{
+        border:none;
+        width: 160px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 70px;
+        background-color: #949494;
+        font-family:'微软雅黑';
+        color:white;
+        font-size:16px;
+        border-radius:5px;
+        transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+        text-align: center;
+        line-height: 30px;
+    }
+    .userNewPic-content:hover{
+        background-color:lightgrey;
+        color:black;
+    }
+    .userNewPic{
+        width:160px;
+        height: 30px;
+        position: relative;
+        top:-37px;
+        opacity: 0;
+    }
+    /*保存头像按钮*/
+    .userNewPicSubmit{
+        border:none;
+        background-color:#547abb;
+        margin-top: 20px;
+        margin-left: 70px;
+        width:160px;
+        height:30px;
+        font-family:'微软雅黑';
+        color:white;
+        font-size:16px;
+        border-radius:5px;
+        transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+    }
+    .userNewPicSubmit:hover{
+        background-color:lightsteelblue;
+        color:black;
+    }
+    /*用户信息左侧部分的容器 end/
+
+    /*用户信息右侧部分的容器 begin*/
+    /*右侧用户信息列表*/
+    .info-right{
+        width:300px;
+        height:260px;
+        padding-top: 15px;
+        font-family:'微软雅黑';
+        font-size:14px;
+        float:none;
+        border-top:3px dashed grey;
+    }
+    .info-right .title,.theUserName,.theUserTel,.theUserAddr,.submit{
+        width:280px;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 10px;
+    }
+    /*用户名 绑定手机*/
+    .info-right .UserName,.UserTel{
+        width:200px;
+        height: 20px;
+        border-radius: 5px;
+        border:1px dashed grey;
+        line-height: 20px;
+        font-size:16px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    /*收货地址*/
+    .info-right .theUserAddr{
+        height: 50px;
+        padding-top: 15px;
+    }
+    .info-right span{
+        position: relative;
+        top:-30px;
+    }
+    .info-right .UserAddr{
+        width:200px;
+        height: 40px;
+        margin-left: 10px;
+        border: 1px dashed grey;
+        border-radius: 5px;
+        text-align: center;
+        font-family:'微软雅黑';
+        font-size:14px;
+    }
+    /*提交按钮*/
+    .inforFormRightsubmit{
+        margin-top: 10px;
+    }
+    .inforFormRightsubmit input{
+        border:none;
+        background-color:#ef7662;
+        width:280px;
+        height:30px;
+        font-family:'微软雅黑';
+        color:white;
+        font-size:16px;
+        border-radius:5px;
+        transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+        margin-left: 10px;
+    }
+    .inforFormRightsubmit input:hover{
+        background-color:#547abb;
+    }
+    /*用户信息右侧部分的容器 end*/
+
+    /******************************图片形式的导航******************************/
+    #menu_pics_h1{
+        top:100px;
+        width:220px;
+        font-size: 16px;
+    }
+    #menu_pics{
+        width:100%;
+        height:250px;
+        top:100px;
+    }
+    #menu_pics a{
+        height: 120px;
+    }
+    /***图片中的黑色字幕***/
+    #menu_a_tv #tv_div1,#menu_a_aircondition #aircondition_div1,#menu_a_refrigerator #refrigerator_div1,
+    #menu_a_washer #washer_div1,#menu_a_waterheater #waterheater_div1,#menu_a_kitchen #kitchen_div1{
+        width:45%;
+        height:17%;
+        font-size:12px;
+    }
+    /***图片中的透明黑色遮罩***/
+    #menu_a_tv #tv_div2,#menu_a_aircondition #aircondition_div2,#menu_a_refrigerator #refrigerator_div2,
+    #menu_a_washer #washer_div2,#menu_a_waterheater #waterheater_div2,#menu_a_kitchen #kitchen_div2{
+        font-size:14px;
+    }
+    #footer{
+        padding-bottom: 20px;
+        position: relative;
+        top:120px;
+    }
+}
+
+

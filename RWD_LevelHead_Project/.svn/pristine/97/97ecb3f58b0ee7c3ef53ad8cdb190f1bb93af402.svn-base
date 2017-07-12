@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LevelHead家电购物-注册成功</title>
+    <!--css-header-->
+    <link rel="stylesheet" href="../css/css_header.css">
+    <!--css-RegisterError-->
+    <link rel="stylesheet" href="../css/css_RegisterError.css">
+</head>
+<body>
+<!--**************************************-->
+<!--网页上方固定不动的标头-->
+<div id="site-nav">
+    <div class="sn-container">
+        <!--网站logo-->
+        <a href='#' class="sn-logo fl"><b><i>LevelHead</i></b></a>
+        <!--展示下拉菜单的图标-->
+        <a href="#" class="sn-showmenu fr"><img src="../images/menu1.png" alt=""></a>
+        <!--快速导航菜单-->
+        <div class="sn-quick-menu fr">
+            <a href="Home.html" class="sn-home">首页</a>
+            <a href="Login.html" class="sn-login">登录</a>
+            <a href="#" class="sn-user"></a>
+            <a href="ShoppingCar.html" class="sn-chart">购物车</a>
+            <a href="#" class="sn-logout">退出</a>
+        </div>
+    </div>
+</div>
+
+<!--*************************************************************-->
+<div id='registerError_container'>
+    <div id='fail'>
+        <div id='fail_left'></div>
+        <div id='fail_right'>
+            <p id='fail_right_up'>抱歉,注册失败!</p>
+            <p id='fail_right_down'><span style='color:black;'>失败原因:</span>该用户名已经注册<a href='Register.html' target='_blank'>重新注册</a></p>
+        </div>
+    </div>
+</div>
+<!--*************************************************************-->
+
+<div id="bg_test" style="height: 100px;width: 100%;"></div>
+
+<!--js-jquery-->
+<script src="../javascript/jquery-2.2.4.min.js"></script>
+<!--js-header-->
+<script src="../javascript/js_header.js"></script>
+
+</body>
+</html>

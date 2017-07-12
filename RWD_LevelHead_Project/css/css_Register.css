@@ -1,0 +1,349 @@
+#bg_test{
+    position: relative;
+    top:150px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+#footer{
+
+}
+/************************注册表单********************************/
+/*register container*/
+#register_container{
+    width:900px;
+    height:700px;
+    background-color:#FDFDFD;
+    margin:0 auto;
+    position:relative;
+    top:120px;
+    box-shadow: -10px 10px 10px #CCCCCC;
+    border-radius:5px;
+}
+/*注册表单*/
+#register_container #registercontent{
+    width:900px;
+    height:700px;
+    font-family:'微软雅黑';
+    color:#666;
+}
+#registercontent h1{
+    margin:0px;
+    text-align:center;
+    font-size:25px;
+    font-weight:400;
+    padding-top:40px;
+}
+/*用户名*/
+#registercontent #register_user{
+    width:380px;
+    height:50px;
+    margin:40px auto;
+    margin-bottom: 10px;
+    border:1px #CCC solid;
+    line-height:50px;
+    font-size:16px;
+    padding-left:20px;
+    letter-spacing:7px;
+    transition:border 0.4s ease,color 0.4s ease;
+}
+#registercontent #register_user:hover{
+    border:1px #547abb solid;
+    color:#547abb;
+}
+#register_user #registeruser{
+    width:295px;
+    height:46px;
+    outline:none;
+    font-size:16px;
+    border:none;
+    background:none;
+}
+/*若用户名不符合规范时显示内容的区域*/
+#wrong_name{
+    width:400px;
+    height:20px;
+    font-family:'微软雅黑';
+    font-size:13px;
+    color:#ef7662;
+    margin:0 auto;
+}
+/*密码*/
+#registercontent #register_pwd{
+    width:380px;
+    height:50px;
+    margin:40px auto;
+    margin-top: 10px;
+    border:1px #ccc solid;
+    line-height:50px;
+    font-size:16px;
+    padding-left:20px;
+    letter-spacing:30px;
+    transition:border 0.4s ease,color 0.4s ease;
+}
+#registercontent #register_pwd:hover{
+    border:1px #547abb solid;
+    color:#547abb;
+}
+#register_pwd #registerpwd{
+    width:250px;
+    height:46px;
+    outline:none;
+    font-size:16px;
+    border:none;
+    position:relative;
+    left:-45px;
+    background:none;
+}
+/*确认密码*/
+#registercontent #register_pwdagain{
+    width:380px;
+    height:50px;
+    margin:40px auto;
+    margin-bottom:10px;
+    border:1px #ccc solid;
+    line-height:50px;
+    font-size:16px;
+    padding-left:20px;
+    letter-spacing:1px;
+    transition:border 0.4s ease,color 0.4s ease;
+}
+#registercontent #register_pwdagain:hover{
+    border:1px #547abb solid;
+    color:#547abb;
+}
+#register_pwdagain #registerpwdagain{
+    width:295px;
+    height:46px;
+    outline:none;
+    font-size:16px;
+    border:none;
+    position:relative;
+    left:8px;
+    background:none;
+}
+/*若两次密码出错时显示内容的区域*/
+#wrong_pwd{
+    width:400px;
+    height:20px;
+    font-family:'微软雅黑';
+    font-size:13px;
+    color:#ef7662;
+    margin:0 auto;
+}
+/*电话号码*/
+#registercontent #register_tel{
+    width:380px;
+    height:50px;
+    margin:40px auto;
+    margin-bottom:10px;
+    margin-top:10px;
+    border:1px #ccc solid;
+    line-height:50px;
+    font-size:16px;
+    padding-left:20px;
+    transition:border 0.4s ease,color 0.4s ease;
+}
+#registercontent #register_tel:hover{
+    border:1px #547abb solid;
+    color:#547abb;
+}
+#register_tel #registertel{
+    width:285px;
+    height:46px;
+    outline:none;
+    font-size:16px;
+    border:none;
+    position:relative;
+    left:10px;
+    background:none;
+}
+/*若手机无效时显示内容的区域*/
+#wrong_phone{
+    width:400px;
+    height:20px;
+    font-family:'微软雅黑';
+    font-size:13px;
+    color:#ef7662;
+    margin:0 auto;
+}
+/*同意协议*/
+#registercontent #register_agree{
+    width:405px;
+    height:30px;
+    margin:40px auto;
+    margin-top:10px;
+    line-height:30px;
+}
+#register_agree #registeragree{
+    width:18px;
+    height:18px;
+    position:relative;
+    top:3px;
+}
+/*注册*/
+#registercontent #registersubmit{
+    display:block;
+    width:400px;
+    height:50px;
+    margin:0 auto;
+    border:none;
+    background-color:#547abb;
+    color:white;
+    font-family:'微软雅黑';
+    font-size:18px;
+    transition:background-color 0.4s ease;
+}
+#registercontent #registersubmit:hover{
+    background-color:#ef7662;
+}
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /************************注册表单********************************/
+    /*register container*/
+    #register_container{
+        width:700px;
+    }
+    /*注册表单*/
+    #register_container #registercontent{
+        width:700px;
+    }
+
+
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /************************注册表单********************************/
+    /*register container*/
+    #register_container{
+        width:95%;
+        height:430px;
+        top:100px;
+        box-shadow:none;
+    }
+    /*注册表单*/
+    #register_container #registercontent{
+        width:100%;
+        height:430px;
+    }
+    #registercontent h1{
+        font-size:18px;
+        padding-top:20px;
+        margin-bottom: 20px;
+    }
+    /*用户名*/
+    #registercontent #register_user{
+        width:300px;
+        height:30px;
+        margin:0px auto;
+        line-height:30px;
+        font-size:14px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    #register_user #registeruser{
+        width:200px;
+        height:30px;
+        font-size:14px;
+    }
+    /*若用户名不符合规范时显示内容的区域*/
+    #wrong_name{
+        width:280px;
+        height:15px;
+        font-size:12px;
+        margin-bottom: 10px;
+    }
+    /*密码*/
+    #registercontent #register_pwd{
+        width:300px;
+        height:30px;
+        margin:0px auto;
+        line-height:30px;
+        font-size:14px;
+        border-radius: 10px;
+    }
+    #register_pwd #registerpwd{
+        width:150px;
+        height:30px;
+        font-size:14px;
+    }
+    /*确认密码*/
+    #registercontent #register_pwdagain{
+        width:300px;
+        height:30px;
+        margin:0px auto;
+        line-height:30px;
+        font-size:14px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    #register_pwdagain #registerpwdagain{
+        width:200px;
+        height:30px;
+        font-size:14px;
+        left:10px;
+    }
+    /*若两次密码出错时显示内容的区域*/
+    #wrong_pwd{
+        width:280px;
+        height:15px;
+        font-size:12px;
+        margin-top: 10px;
+    }
+    /*电话号码*/
+    #registercontent #register_tel{
+        width:300px;
+        height:30px;
+        margin:0px auto;
+        margin-top:10px;
+        line-height:30px;
+        font-size:14px;
+        border-radius: 10px;
+    }
+    #register_tel #registertel{
+        width:200px;
+        height:30px;
+        font-size:14px;
+    }
+    /*若手机无效时显示内容的区域*/
+    #wrong_phone{
+        width:280px;
+        height:20px;
+        font-size:12px;
+        margin-top: 10px;
+    }
+    /*同意协议*/
+    #registercontent #register_agree{
+        width:320px;
+        height:30px;
+        margin:0px auto;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    /*注册*/
+    #registercontent #registersubmit{
+        width:320px;
+        height:30px;
+        font-size:14px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    #footer{
+        top:150px;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,127 @@
+#bg_test{
+    position: relative;
+    top:250px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+#footer{
+
+}
+
+/*******************************************/
+/*没有订单记录时显示的区域*/
+#noOrderArea{
+    width:80%;
+    height: 400px;
+    padding-bottom: 30px;
+    background-color:#FDFDFD;
+    margin:0 auto;
+    position:relative;
+    top:130px;
+    box-shadow: -10px 10px 10px #CCCCCC;
+    border-radius:5px;
+    font-family:'微软雅黑';
+    display: none;
+}
+#noOrderArea p{
+    width:90%;
+    height:80px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top:150px;
+    font-size: 20px;
+}
+
+/****************************************/
+/*当用户有订单记录时显示的区域*/
+#showOrderArea{
+    width:880px;
+    background-color:#FDFDFD;
+    margin:0 auto;
+    position:relative;
+    top:130px;
+    box-shadow: -10px 10px 10px #CCCCCC;
+    border-radius:5px;
+    font-family:'微软雅黑';
+}
+#showOrderArea table{
+    margin: 0 auto;
+}
+#showOrderArea table th{
+    border-top:1px dashed grey;
+    border-bottom:1px dashed grey;
+}
+#showOrderArea table td{
+    text-align: center;
+    width:155px;
+}
+#showOrderArea table td img{
+    width:155px;
+    height: 130px;
+}
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /****************************************/
+    /*当用户有订单记录时显示的区域*/
+    #showOrderArea{
+        width:740px;
+    }
+    #showOrderArea table td{
+        text-align: center;
+        width:120px;
+    }
+    #showOrderArea table td img{
+        width:120px;
+        height: 130px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /*******************************************/
+    /*没有订单记录时显示的区域*/
+    #noOrderArea{
+        height: 300px;
+        top:80px;
+    }
+    #noOrderArea p{
+        top:100px;
+        font-size: 14px;
+    }
+    /****************************************/
+    /*当用户有订单记录时显示的区域*/
+    #showOrderArea{
+        width:350px;
+        font-size: 12px;
+        position: relative;
+        top:80px;
+        box-shadow: none;
+    }
+    #showOrderArea table td{
+        text-align: center;
+        width:40px;
+    }
+    #showOrderArea .havePic{
+        width:120px;
+    }
+    #showOrderArea table td img{
+        width:120px;
+        height: 120px;
+    }
+}
+
+

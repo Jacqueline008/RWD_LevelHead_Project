@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LevelHead家电购物-产品</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <!--css-header-->
+    <link rel="stylesheet" href="../css/css_header.css">
+    <!--css-footer-->
+    <link rel="stylesheet" href="../css/css_footer.css">
+    <!--css-Haier_product1-->
+    <link rel="stylesheet" href="../css/css_Haier_product1.css">
+    <!--css-colorbox-->
+    <link rel="stylesheet" href="../colorbox/colorbox.css">
+</head>
+<body>
+
+<!--**************************************-->
+<!--网页上方固定不动的标头-->
+<div id="site-nav">
+    <div class="sn-container">
+        <!--网站logo-->
+        <a href='#' class="sn-logo fl"><b><i>LevelHead</i></b></a>
+        <!--展示下拉菜单的图标-->
+        <a href="#" class="sn-showmenu fr"><img src="../images/menu1.png" alt=""></a>
+        <!--快速导航菜单-->
+        <div class="sn-quick-menu fr">
+            <a href="Home.html" class="sn-home">首页</a>
+            <a href="Login.html" class="sn-login">登录</a>
+            <a href="#" class="sn-user"></a>
+            <a href="ShoppingCar.html" class="sn-chart">购物车</a>
+            <a href="#" class="sn-logout">退出</a>
+        </div>
+    </div>
+</div>
+<!--**************************************-->
+
+<!--**********************************************-->
+<!--商品信息开始-->
+<div id="product_info_container">
+    <!--商品信息容器的左侧的竖着的照片列表-->
+    <div id="product_info_left">
+        <a id="pic1" rel="g1" href="../images/haier_product1_pic1.jpg">
+            <img src="../images/haier_product1_pic1.jpg"/>
+            <div></div>
+        </a>
+        <a id="pic2" rel="g1" href="../images/haier_product1_pic2.jpg">
+            <img src="../images/haier_product1_pic2.jpg"/>
+            <div></div>
+        </a>
+        <a id="pic3" rel="g1" href="../images/haier_product1_pic3.jpg">
+            <img src="../images/haier_product1_pic3.jpg"/>
+            <div></div>
+        </a>
+        <a id="pic4" rel="g1" href="../images/haier_product1_pic4.jpg">
+            <img src="../images/haier_product1_pic4.jpg"/>
+            <div></div>
+        </a>
+        <a id="pic5" rel="g1" href="../images/haier_product1_pic5.jpg">
+            <img src="../images/haier_product1_pic5.jpg"/>
+            <div></div>
+        </a>
+    </div>
+    <!--商品信息容器的中间的照片展示区域*-->
+    <div id="product_info_mid">
+        <img src="../images/haier_product1_pic1.jpg"/>
+    </div>
+    <!--商品信息容器的右侧的文字信息列表-->
+    <div id="product_info_right">
+        <!--右侧文字信息列表的商品名称-->
+        <div id="product_info_right_pid">
+            <h3> Haier/海尔 LS49A51 49英寸4K高清智能网络液晶平板电视LED48 50</h3>
+        </div>
+        <!--右侧文字信息列表的商品价格-->
+        <div id="product_info_right_price">
+            <del>￥4328.00</del>
+            <br>
+            <span>￥1899.00</span>
+        </div>
+        <!--综合排行，月销量，人气-->
+        <div id="product_info_right_comment">
+            <div id="zonghe">
+                排行 <span>1500</span>
+            </div>
+            <div id="monthcount">
+                月销量 <span>588</span>
+            </div>
+            <div id="popular">
+                人气 <span>5000</span>
+            </div>
+        </div>
+        <!--加入购物车-->
+        <div id="product_info_right_addcar">
+            数量：<input id="addcarCount" name="addcarCount" type="text" value="1"/>
+            <!--加入购物车-->
+            <div id="product_info_right_addcarbtn">加入购物车</div>
+            <!--购买-->
+            <div id="product_info_right_buynow">立即购买</div>
+        </div>
+    </div>
+</div>
+<!--商品信息结束-->
+
+<!--为移动端设计的样式-->
+<!--1.产品信息列表-->
+<div id="product_info_container_mobile">
+    <!--轮播组件-->
+    <div class="carousel slide container" data-ride="carousel" id="mycarousel">
+        <!--小点点-->
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+            <li data-target="#mycarousel" data-slide-to="3"></li>
+            <li data-target="#mycarousel" data-slide-to="4"></li>
+        </ol>
+        <!--播放内容-->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../images/haier_product1_pic1.jpg">
+            </div>
+
+            <div class="item">
+                <img src="../images/haier_product1_pic2.jpg">
+            </div>
+
+            <div class="item">
+                <img src="../images/haier_product1_pic3.jpg">
+            </div>
+
+            <div class="item">
+                <img src="../images/haier_product1_pic4.jpg">
+            </div>
+
+            <div class="item">
+                <img src="../images/haier_product1_pic5.jpg">
+            </div>
+        </div>
+        <!--左右箭头-->
+        <a href="#mycarousel" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#mycarousel" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+    </div>
+    <!--文字信息列表-->
+    <!--文字信息列表的商品名称-->
+    <div id="product_info_pid">
+        <h3> Haier/海尔 LS49A51 49英寸4K高清智能网络液晶平板电视LED48 50</h3>
+    </div>
+    <!--文字信息列表的商品价格-->
+    <div id="product_info_price">
+        <span>￥1899.00</span>
+        <del>￥4328.00</del>
+        <input id="addcarCount_mobile" type="text" value="1"/>
+        <b>购买数量:</b>
+    </div>
+    <!--综合排行，月销量，人气-->
+    <div id="product_info_comment">
+        <div class="zonghe">
+            排行 <span>1500</span>
+        </div>
+        <div class="monthcount">
+            月销量 <span>588</span>
+        </div>
+        <div class="popular">
+            人气 <span>5000</span>
+        </div>
+    </div>
+</div>
+<!--2.加入购物车-->
+<div id="product_info_mobile_addcar">
+    <div class="icon"><img src="../images/kefu.png"><span>客服</span></div>
+    <div class="icon"><img src="../images/shop.png"><span>店铺</span></div>
+    <div class="icon"><img src="../images/save.png"><span>收藏</span></div>
+    <div class="addcar" id="addcarbtn_mobile">加入购物车</div>
+    <div class="buynow" id="buynow_mobile">立即购买</div>
+</div>
+<!--**********************************************-->
+
+<!--商品详情，规格参数，累计评价展示栏--->
+<div id="product_mixinfo">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#product_detail" role="tab" data-toggle="tab">商品详情</a></li>
+        <li><a href="#product_standard" role="tab" data-toggle="tab">规格参数</a></li>
+        <li><a href="#product_totalcomment" role="tab" data-toggle="tab">累计评价</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="product_detail">
+            <img src="../images/haier_product1_detail1.jpg"/>
+            <img src="../images/haier_product1_detail2.jpg"/>
+            <img src="../images/haier_product1_detail3.jpg"/>
+            <img src="../images/haier_product1_detail4.jpg"/>
+            <img src="../images/haier_product1_detail5.jpg"/>
+            <img src="../images/haier_product1_detail6.jpg"/>
+            <img src="../images/haier_product1_detail7.jpg"/>
+            <img src="../images/haier_product1_detail8.jpg"/>
+            <img src="../images/haier_product1_detail9.jpg"/>
+        </div>
+
+        <div class="tab-pane" id="product_standard">
+            <img src="../images/haier_standard.PNG"/>
+            <img src="../images/haier_standard2.PNG"/>
+            <img src="../images/haier_standard3.PNG"/>
+        </div>
+
+        <div class="tab-pane" id="product_totalcomment">
+            <img src="../images/haier_product1_comment1.PNG"/>
+            <img src="../images/haier_product1_comment2.PNG"/>
+        </div>
+    </div>
+</div>
+
+
+<!--***********************************************************************-->
+<!--页尾-->
+<div id="footer">
+    <div class="footer_container">
+        <p>地址：青岛大学</p>
+        <p>版权：Copyright &copy;2000-2017 李艺鸣 郝臻瑜 穆思宇 All Rights Reserved. </p>
+        <p>备案：鲁 ICP 备案 05001947 号 - 1</p>
+    </div>
+</div>
+<!--***********************************************************************-->
+
+<!--<div id="bg_test" style="height: 100px;width: 100%;"></div>-->
+
+</body>
+
+
+<!--js-jquery-->
+<script src="../javascript/jquery-2.2.4.min.js"></script>
+<!--bootstrap-->
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<!--js-header-->
+<script src="../javascript/js_header.js"></script>
+<!--js-colorbox-->
+<script src="../colorbox/jquery.colorbox-min.js"></script>
+<!--js-Haier_product1-->
+<script src="../javascript/js_Haier_product1.js"></script>
+
+</html>

@@ -1,0 +1,12 @@
+<?php
+include_once "IShowResult.php";
+
+class InfoUploadPicShowResult implements IShowResult {
+    public function showResult(){}
+
+    public function theinfoUploadPicshowResult(){
+        header("Location:http://localhost/phpStorm_Project/RWD_LevelHead_Project/html/Logined_NormalUser.html");
+    }
+}
+
+?>

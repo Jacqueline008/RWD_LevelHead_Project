@@ -1,0 +1,586 @@
+#bg_test{
+    position: relative;
+    top:250px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+#footer{
+    position: relative;
+    top:280px;
+}
+
+
+/****************************************************************************/
+/*先隐藏掉为移动端设计的样式*/
+#product_info_container_mobile,#product_info_mobile_addcar{
+    display: none;
+}
+/*上方商品信息*/
+/*商品信息容器*/
+#product_info_container{
+    width:950px;
+    height:470px;
+    margin:0 auto;
+    position:relative;
+    top:130px;
+}
+/*商品信息容器的左侧的竖着的照片列表*/
+#product_info_left{
+    width:75px;
+    height:470px;
+    float:left;
+}
+#product_info_left #pic1{
+    display:block;
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic1 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic1 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.3;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/**/
+#product_info_left #pic2{
+    display:block;
+    width:75px;
+    height:75px;
+    margin-top:20px;
+}
+#product_info_left #pic2 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic2 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/**/
+#product_info_left #pic3{
+    display:block;
+    width:75px;
+    height:75px;
+    margin-top:20px;
+}
+#product_info_left #pic3 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic3 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/**/
+#product_info_left #pic4{
+    display:block;
+    width:75px;
+    height:75px;
+    margin-top:20px;
+}
+#product_info_left #pic4 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic4 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/**/
+#product_info_left #pic5{
+    display:block;
+    width:75px;
+    height:75px;
+    margin-top:20px;
+}
+#product_info_left #pic5 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic5 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/*商品信息容器的中间的照片展示区域*/
+#product_info_mid{
+    width:430px;
+    height:470px;
+    float:left;
+    margin-left:15px;
+}
+#product_info_mid img{
+    width:430px;
+    height:470px;
+}
+/*商品信息容器的右侧的文字信息列表*/
+#product_info_right{
+    width:400px;
+    height:470px;
+    float:left;
+    margin-left:30px;
+}
+/*右侧文字信息列表的商品名称*/
+#product_info_right #product_info_right_pid{
+    width:400px;
+    height:80px;
+}
+#product_info_right #product_info_right_pid h3{
+    margin:0;
+    padding-left:5px;
+    padding-right:5px;
+    font-family:'微软雅黑';
+    font-weight:600;
+}
+/*右侧文字信息列表的商品价格*/
+#product_info_right #product_info_right_price{
+    width:400px;
+    height:95px;
+    padding-top:10px;
+    font-family:'微软雅黑';
+    font-size:19px;
+}
+#product_info_right_price span{
+    font-weight:600;
+    font-size:26px;
+    color:#ef7662;
+}
+/*综合排行，月销量，人气*/
+#product_info_right #product_info_right_comment{
+    width:400px;
+    height:50px;
+    border-top:dashed grey 1px;
+    border-bottom:dashed grey 1px;
+}
+#product_info_right_comment span{
+    color:#ef7662;
+}
+#product_info_right #product_info_right_comment #zonghe{
+    width:130px;
+    height:50px;
+    float:left;
+    text-align:center;
+    line-height:50px;
+    font-family:'微软雅黑';
+    border-right:dashed 1px grey;
+}
+#product_info_right #product_info_right_comment #monthcount{
+    width:130px;
+    height:50px;
+    float:left;
+    margin-left:4px;
+    text-align:center;
+    line-height:50px;
+    font-family:'微软雅黑';
+    border-right:dashed 1px grey;
+}
+#product_info_right #product_info_right_comment #popular{
+    width:130px;
+    height:50px;
+    float:left;
+    margin-left:4px;
+    text-align:center;
+    line-height:50px;
+    font-family:'微软雅黑';
+}
+/*加入购物车*/
+#product_info_right #product_info_right_addcar{
+    width:400px;
+    height:200px;
+    font-family:'微软雅黑';
+    padding-left:0px;
+    padding-top: 60px;
+}
+#product_info_right_addcar input[type="text"]{
+    width:43px;
+    height:35px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    border:none;
+    font-size:20px;
+    text-align:center;
+}
+#product_info_right_addcar #product_info_right_addcarbtn{
+    width:120px;
+    height:43px;
+    border:none;
+    background-color:#ef7662;
+    margin-left:35px;
+    font-family:'微软雅黑';
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    position: relative;
+    top:-35px;
+    left:110px;
+    text-align: center;
+    line-height: 43px;
+    transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+}
+#product_info_right_addcar #product_info_right_addcarbtn:hover{
+    background-color:#ededed;
+    color:black;
+    border:1px solid black;
+}
+/*立即购买*/
+#product_info_right #product_info_right_buynow{
+    border:none;
+    background-color:#547abb;
+    position:relative;
+    top:10px;
+    left:0px;
+    width:270px;
+    height:45px;
+    font-family:'微软雅黑';
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    text-align: center;
+    line-height: 45px;
+    transition:background-color 0.4s ease,color 0.4s ease,border 0.4s ease;
+}
+#product_info_right #product_info_right_buynow:hover{
+    background-color:#ededed;
+    color:black;
+    border:1px black solid;
+}
+
+/**商品详情，规格参数，累计评价展示栏******************************************************/
+#product_mixinfo{
+    position: relative;
+    top:200px;
+    width: 950px;
+    margin: 0 auto;
+}
+#product_mixinfo img{
+    width: 950px;
+}
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /****************************************************************************/
+    /*上方商品信息*/
+    /*商品信息容器*/
+    #product_info_container{
+        width:750px;
+        height:470px;
+        margin:0 auto;
+        position:relative;
+        top:130px;
+    }
+    /*商品信息容器的左侧的竖着的照片列表*/
+    #product_info_left{
+        width:75px;
+        height:470px;
+        float:left;
+    }
+    /*商品信息容器的中间的照片展示区域*/
+    #product_info_mid{
+        width:380px;
+        height:440px;
+        float:left;
+        margin-left:15px;
+    }
+    #product_info_mid img{
+        width:380px;
+        height:440px;
+    }
+    /*商品信息容器的右侧的文字信息列表*/
+    #product_info_right{
+        width:260px;
+        height:470px;
+        float:left;
+        margin-left:10px;
+    }
+    /*右侧文字信息列表的商品名称*/
+    #product_info_right #product_info_right_pid{
+        width:260px;
+        height:80px;
+    }
+    #product_info_right #product_info_right_pid h3{
+        margin:0;
+        padding-left:5px;
+        padding-right:5px;
+        font-size: 20px;
+    }
+    /*右侧文字信息列表的商品价格*/
+    #product_info_right #product_info_right_price{
+        width:260px;
+        height:95px;
+        padding-top:10px;
+        font-size:19px;
+    }
+    /*综合排行，月销量，人气*/
+    #product_info_right #product_info_right_comment{
+        width:260px;
+        height:50px;
+    }
+    #product_info_right #product_info_right_comment #zonghe{
+        width:80px;
+        height:50px;
+        float:left;
+        line-height:50px;
+        font-size: 12px;
+    }
+    #product_info_right #product_info_right_comment #monthcount{
+        width:80px;
+        height:50px;
+        float:left;
+        margin-left:4px;
+        line-height:50px;
+        font-size: 12px;
+    }
+    #product_info_right #product_info_right_comment #popular{
+        width:80px;
+        height:50px;
+        float:left;
+        margin-left:4px;
+        line-height:50px;
+        font-size: 12px;
+    }
+    /*加入购物车*/
+    #product_info_right #product_info_right_addcar{
+        width:260px;
+        height:200px;
+        padding-left:0px;
+        padding-top: 60px;
+    }
+    #product_info_right_addcar input[type="text"]{
+        width:43px;
+        height:35px;
+        font-size:20px;
+    }
+    #product_info_right_addcar #product_info_right_addcarbtn{
+        width:120px;
+        height:43px;
+        margin-left:35px;
+        font-size:16px;
+        top:-35px;
+        left:100px;
+        line-height: 43px;
+    }
+    /*立即购买*/
+    #product_info_right #product_info_right_buynow{
+        top:10px;
+        left:0px;
+        width:260px;
+        height:45px;
+        font-size:18px;
+        line-height: 45px;
+    }
+
+    /**商品详情，规格参数，累计评价展示栏******************************************************/
+    #product_mixinfo{
+        position: relative;
+        top:200px;
+        width: 750px;
+        margin: 0 auto;
+    }
+    #product_mixinfo img{
+        width: 750px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /******************商品展示区域*********************************/
+    /*先隐藏掉为大屏幕和中屏幕和平板设计的样式*/
+    #product_info_container{
+        display: none;
+    }
+    #product_info_container_mobile,#product_info_mobile_addcar{
+        display: block;
+    }
+    /**1.承装信息的容器 begin**/
+    #product_info_container_mobile{
+        width:100%;
+        height:450px;
+        background-color: #fff;
+        position: relative;
+        top:60px;
+    }
+    /***轮播组件**/
+    #product_info_container_mobile .carousel{
+        height: 360px;
+        padding: 0;
+    }
+    .carousel .item{
+        height: 360px;
+        background-color: #000;
+    }
+    .carousel img{
+        width: 100%;
+    }
+    /*文字信息列表的商品名称*/
+    #product_info_container_mobile #product_info_pid{
+        width:100%;
+        height: 40px;
+        padding-top: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #product_info_pid h3{
+        font-size: 14px;
+        margin: 0;
+    }
+    /*文字信息列表的商品价格*/
+    #product_info_price{
+        width:100%;
+        height: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #product_info_price span{
+        color:#ef7662;
+        font-size: 18px;
+    }
+    #product_info_price b{
+        font-weight: 500;
+        float: right;
+    }
+    #addcarCount_mobile{
+        width:30px;
+        height:20px;
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+        border:none;
+        font-size:16px;
+        text-align:center;
+        float: right;
+        margin-left: 10px;
+    }
+    /*综合排行，月销量，人气*/
+    #product_info_comment{
+        width: 100%;
+        heigit:20px;
+        margin-top: 10px;
+        color:#555;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .zonghe,.monthcount,.popular{
+        width: 33%;
+        float:left;
+        text-align: center;
+    }
+    .zonghe{
+        text-align: left;
+        margin-right: 0.5%;
+    }
+    .monthcount{
+        margin-right: 0.5%;
+    }
+    .popular{
+        text-align: right;
+    }
+    /*承装信息的容器 end*/
+    /*2.加入购物车*/
+    #product_info_mobile_addcar{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index:2000;
+    }
+    #product_info_mobile_addcar .icon{
+        float: left;
+        width: 12%;
+        height: 50px;
+        text-align: center;
+        background-color: #fff;
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    #product_info_mobile_addcar .icon img{
+        width: 20px;
+        height: 20px;
+    }
+    #product_info_mobile_addcar .icon span{
+        display: block;
+        width: 30px;
+        height: 20px;
+        margin: 0 auto;
+    }
+    #product_info_mobile_addcar .addcar,.buynow{
+        float: left;
+        width: 32%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+    }
+    .addcar{
+        background-color:#ef7662;
+    }
+    .buynow{
+        background-color:#547abb ;
+    }
+
+    /**商品详情，规格参数，累计评价展示栏******************************************************/
+    #product_mixinfo{
+        position: relative;
+        top:80px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #product_mixinfo img{
+        width: 100%;
+    }
+    #product_standard img:nth-child(1){
+        height: 270px;
+    }
+    #product_standard img:nth-child(2){
+         height: 250px;
+    }
+    #product_standard img:nth-child(3){
+        height: 140px;
+    }
+    #product_totalcomment img:nth-child(1){
+        height: 150px;
+    }
+
+    #footer{
+        position: relative;
+        top:130px;
+        padding-bottom: 80px;
+    }
+
+}
+
+

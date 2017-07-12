@@ -1,0 +1,18 @@
+<?php
+include_once 'IShowResult.php';
+
+class RegisterShowResult implements IShowResult {
+
+    public function showResult(){}
+
+    public function showSuccessResult(){
+        header("Location:http://localhost/phpStorm_Project/RWD_LevelHead_Project/html/RegisterSuccess.html");
+    }
+
+    public function showErrorResult(){
+        header("Location:http://localhost/phpStorm_Project/RWD_LevelHead_Project/html/RegisterError.html");
+    }
+
+}
+
+?>

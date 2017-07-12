@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LevelHead家电购物-支付</title>
+    <!--css-header-->
+    <link rel="stylesheet" href="../css/css_header.css">
+    <!--css-footer-->
+    <link rel="stylesheet" href="../css/css_footer.css">
+    <!--css-Payment-->
+    <link rel="stylesheet" href="../css/css_Payment.css">
+</head>
+<body>
+<!--**************************************-->
+<!--网页上方固定不动的标头-->
+<div id="site-nav">
+    <div class="sn-container">
+        <!--网站logo-->
+        <a href='#' class="sn-logo fl"><b><i>LevelHead</i></b></a>
+        <!--展示下拉菜单的图标-->
+        <a href="#" class="sn-showmenu fr"><img src="../images/menu1.png" alt=""></a>
+        <!--快速导航菜单-->
+        <div class="sn-quick-menu fr">
+            <a href="Home.html" class="sn-home">首页</a>
+            <a href="Login.html" class="sn-login">登录</a>
+            <a href="#" class="sn-user"></a>
+            <a href="ShoppingCar.html" class="sn-chart">购物车</a>
+            <a href="#" class="sn-logout">退出</a>
+        </div>
+    </div>
+</div>
+
+<!--**************************************-->
+<!--支付区域-->
+<div id="upOrder_container">
+    <!--展示该订单区域-->
+    <div id="showOrderArea">
+        <table>
+            <tr style='background-color: #ededed;'>
+                <th>订单编号</th>
+                <th>产品图片</th>
+                <th>产品描述</th>
+                <th>售价</th>
+                <th>数量</th>
+                <th>总计</th>
+            </tr>
+            <tr>
+            <td class="OrderID"></td>
+            <td class="havePic"><img class="Pic" src=''></td>
+            <td class="Description"></td>
+            <td class="SellPrice"></td>
+            <td class="productCount"></td>
+            <td class="sum"></td>
+            </tr>
+        </table>
+    </div>
+    <!--展示该用户的地址区域-->
+    <div id="showUserAddrArea">
+        <p>寄送至: <span class="address"></span></p>
+        <p>收货人: <span  class="name"></span></p>
+        <p>联系方式: <span class="tel"></span></p>
+    </div>
+    <!--立即支付按钮-->
+    <input id="buynow" type="button" value="立即支付">
+</div>
+
+
+
+
+<!--***********************************************************************-->
+<!--页尾-->
+<div id="footer">
+    <div class="footer_container">
+        <p>地址：青岛大学</p>
+        <p>版权：Copyright &copy;2000-2017 李艺鸣 郝臻瑜 穆思宇 All Rights Reserved. </p>
+        <p>备案：鲁 ICP 备案 05001947 号 - 1</p>
+    </div>
+</div>
+<!--***********************************************************************-->
+
+
+<div id="bg_test" style="height: 100px;width: 100%;"></div>
+
+</body>
+
+<!--js-jquery-->
+<script src="../javascript/jquery-2.2.4.min.js"></script>
+<!--js-header-->
+<script src="../javascript/js_header.js"></script>
+<!--js-Payment-->
+<script src="../javascript/js_Payment.js"></script>
+
+</html>

@@ -1,0 +1,355 @@
+#bg_test{
+    position: relative;
+    top:250px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+
+/**********************12个商品容器************************/
+/*总的容器*/
+#products_container{
+    background-color: #fff;
+    position: relative;
+    top:180px;
+    padding: 0;
+}
+/*行容器*/
+#products_container .row{
+    margin: 0;
+}
+/*列容器*/
+#products_container .row .pd{
+    height:450px;
+    padding: 0;
+}
+/*列中的商品容器*/
+.pd-inner{
+    width:240px;
+    height: 430px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.pd-inner:hover{
+    border:1px solid #1b6d85;
+    box-shadow: 10px 10px 10px #ededed;
+    border-radius: 5px;
+}
+/*商品容器中的图片*/
+.pd-inner .pd-pic{
+    width:220px;
+    height:220px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+.pd-inner .pd-pic a img{
+    width:220px;
+    height: 220px;
+}
+/*商品容器中的价格*/
+.pd-inner .pd-sellprice{
+    width:220px;
+    height: 28px;
+    background-color: white;
+    margin: 0 auto;
+    color: #e4393c;
+    font-weight: 400;
+    font-family: Verdana;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.pd-inner .pd-sellprice span{
+    width:100px;
+}
+/*商品容器中的描述*/
+.pd-inner .pd-des{
+    width:220px;
+    height: 70px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 0px;
+    font-size:14px;
+    font-family: "微软雅黑";
+}
+/*商品容器中的月销量*/
+.pd-inner .pd-saleaccount{
+    width:220px;
+    height: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 0px;
+    font-family: "微软雅黑";
+    font-size:14px;
+}
+.pd-inner .pd-saleaccount .pd-des-i{
+    color: #ffaa71;
+}
+/*商品容器中的id,成本，库存，收益*/
+.pd-inner .pd-mix{
+    /*background-color: grey;*/
+    width:220px;
+    height: 80px;
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    font-size:14px;
+}
+.pd-inner .pd-mix .pd-id-i,.pd-costprice-i,.pd-remain-i,.pd-earing-i{
+    color: #ffaa71;
+}
+
+/******************上一页下一页按钮********************************/
+/*button_container  begin*/
+#button_container{
+    height: 35px;
+    position: relative;
+    top:200px;
+}
+.btn-container-inner{
+    width: 50%;
+    height: 35px;
+    margin:0 auto;
+}
+/*上一页按钮*/
+#toLast{
+    width:70px;
+    height:35px;
+    border:none;
+    font-family:'微软雅黑';
+    font-size:16px;
+    color:#666;
+    border-radius:5px;
+    background-color:#ededed;
+    transition:background-color 0.4s ease;
+    outline:none;
+    float: left;
+}
+#toLast:hover{
+    background-color:#FDFDFD;
+}
+/*下一页按钮*/
+#toNext{
+    width:70px;
+    height:35px;
+    border:none;
+    font-family:'微软雅黑';
+    font-size:16px;
+    color:#666;
+    border-radius:5px;
+    background-color:#ededed;
+    transition:background-color 0.4s ease;
+    outline:none;
+    float: right;
+}
+#toNext:hover{
+    background-color:#FDFDFD;
+}
+/*button_container  end*/
+
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+
+    /**********************12个商品容器************************/
+    #products_container{
+        top:180px;
+        padding: 0;
+    }
+    #products_container .row{
+        margin: 0;
+    }
+    /*列容器*/
+    #products_container .row .pd{
+        height:420px;
+        padding: 0;
+    }
+    /*列中的商品容器*/
+    .pd-inner{
+        width:220px;
+        height: 400px;
+        margin-top: 10px;
+    }
+    /*商品容器中的图片*/
+    .pd-inner .pd-pic{
+        width:200px;
+        height:200px;
+        margin-top: 0px;
+    }
+    .pd-inner .pd-pic a img{
+        width:200px;
+        height: 200px;
+    }
+    /*商品容器中的价格*/
+    .pd-inner .pd-sellprice{
+        width:200px;
+    }
+    .pd-inner .pd-sellprice span{
+        width:100px;
+    }
+    /*商品容器中的描述*/
+    .pd-inner .pd-des{
+        width:200px;
+    }
+    /*商品容器中的月销量*/
+    .pd-inner .pd-saleaccount{
+        width:200px;
+    }
+    /*商品容器中的id,成本，库存，收益*/
+    .pd-inner .pd-mix{
+        /*background-color: grey;*/
+        width:200px;
+        height: 80px;
+        margin: 0 auto;
+        font-family: "微软雅黑";
+        font-size:14px;
+    }
+    .pd-inner .pd-mix .pd-id-i,.pd-costprice-i,.pd-remain-i,.pd-earing-i{
+        color: #ffaa71;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+
+    /**********************12个商品容器************************/
+    #products_container{
+        top:180px;
+        padding: 0;
+    }
+    #products_container .row{
+        margin: 0;
+    }
+    /*列容器*/
+    #products_container .row .pd{
+        height:370px;
+        padding: 0;
+    }
+    /*列容器中的商品容器*/
+    .pd-inner{
+        width:220px;
+        height: 350px;
+        margin-top: 10px;
+    }
+    /*商品容器中的图片*/
+    .pd-inner .pd-pic{
+        margin-top: 0px;
+    }
+    /*商品容器中的价格*/
+    .pd-inner .pd-sellprice{
+        margin-top: 0px;
+        font-size:14px;
+        height: 20px;
+    }
+    /*商品容器中的描述*/
+    .pd-inner .pd-des{
+        margin-top: 0px;
+        font-size: 12px;
+        height: 50px;
+    }
+    /*商品容器中的月销量*/
+    .pd-inner .pd-saleaccount{
+        margin-top: 5px;
+        font-size: 10px;
+        height: 15px;
+        font-weight: 600;
+    }
+    /*商品容器中的id,成本，库存，收益*/
+    .pd-inner .pd-mix{
+        width:200px;
+        height: 80px;
+        margin: 0 auto;
+        font-family: "微软雅黑";
+        font-size:10px;
+        font-weight: 600;
+    }
+    .pd-inner .pd-mix .pd-id-i,.pd-costprice-i,.pd-remain-i,.pd-earing-i{
+        color: #ffaa71;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+
+    /**********************12个商品容器************************/
+    #products_container{
+        top:100px;
+        padding: 0;
+    }
+    #products_container .row{
+        margin: 0;
+    }
+    /*列容器*/
+    #products_container .row .pd{
+        height:300px;
+        padding: 0;
+    }
+    /*列容器中的商品容器*/
+    .pd-inner{
+        width:170px;
+        height: 280px;
+        margin-top: 10px;
+    }
+    /*商品容器中的图片*/
+    .pd-inner .pd-pic{
+        width:160px;
+        height:140px;
+        margin-top: 0px;
+    }
+    .pd-inner .pd-pic a img{
+        width:160px;
+        height: 160px;
+    }
+    /*商品容器中的价格*/
+    .pd-inner .pd-sellprice{
+        width:160px;
+        height: 20px;
+        font-weight: 400;
+        font-family: Verdana;
+        font-size: 16px;
+        margin-top: 0;
+    }
+    /*商品容器中的描述*/
+    .pd-inner .pd-des{
+        width:160px;
+        height: 50px;
+        font-size:12px;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    /*商品容器中的月销量*/
+    .pd-inner .pd-saleaccount{
+        width:160px;
+        height: 12px;
+        font-size:10px;
+        margin-top: 0px;
+    }
+    /*商品容器中的id,成本，库存，收益*/
+    .pd-inner .pd-mix{
+        width:160px;
+        height: 60px;
+        margin: 0 auto;
+        font-family: "微软雅黑";
+        font-size:10px;
+        font-weight: 600;
+        margin-top: 2px;
+        /*background-color: grey;*/
+    }
+    .pd-inner .pd-mix .pd-id-i,.pd-costprice-i,.pd-remain-i,.pd-earing-i{
+        color: #ffaa71;
+    }
+    /******************上一页下一页按钮********************************/
+    /*button_container  begin*/
+    #button_container{
+        top:150px;
+    }
+}
+
+

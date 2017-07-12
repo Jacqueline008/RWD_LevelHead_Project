@@ -1,0 +1,410 @@
+#bg_test{
+    position: relative;
+    top:300px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+/************************标头下方的网站介绍图*************************/
+/*大型设备及以下效果*/
+#banner{
+    width:100%;
+    height:520px;
+    background:url(../images/home.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:bottom;
+}
+#banner #window{
+    position:relative;
+    top:250px;
+    width:750px;
+    height:110px;
+    margin:0 auto;
+    text-align:center;
+    color:#fdfdfd;
+    letter-spacing:13px;
+    font-family:'微软雅黑';
+    font-size:33px;
+    font-weight:500;
+    line-height:50px;
+    overflow:hidden;
+}
+/*banner中会向上循环滚动的宣传语*/
+#window #scroll_1{
+    width:750px;
+    height:550px;
+    position:relative;
+}
+#scroll_1 #one1,#scroll_1 #three1,#scroll_1 #five1,#scroll_1 #two1,#scroll_1 #four1{
+    width:750px;
+    height:110px;
+}
+
+#scroll_2{
+    width:750px;
+    height:550px;
+    position:relative;
+    top:-440px;
+}
+#scroll_2 #one2,#scroll_2 #three2,#scroll_2 #five2,#scroll_2 #two2,#scroll_2 #four2{
+    width:750px;
+    height:110px;
+}
+
+#scroll_3{
+    width:750px;
+    height:550px;
+    position:relative;
+    top:-990px;
+}
+#scroll_3 #one3,#scroll_3 #three3,#scroll_3 #five3,#scroll_3 #two3,#scroll_3 #four3{
+    width:750px;
+    height:110px;
+}
+/*隐藏为超小设备设置效果*/
+#banner_mobile{
+    display: none;
+}
+
+/******************************图片形式的导航******************************/
+#menu_pics{
+    width:80%;
+    height:460px;
+    margin:0px auto;
+    position: relative;
+    top:60px;
+}
+#menu_pics a{
+    display: block;
+    width: 33%;
+    height: 220px;
+    background-color: gray;
+    float: left;
+    margin-bottom: 1%;
+    text-decoration: none;
+}
+.middle{
+    margin-left:0.5%;
+    margin-right: 0.5%;
+}
+/***图片背景***/
+#menu_a_tv,#menu_a_aircondition,#menu_a_refrigerator,#menu_a_washer,#menu_a_waterheater,#menu_a_kitchen{
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+/***图片中的黑色字幕***/
+#menu_a_tv #tv_div1,#menu_a_aircondition #aircondition_div1,#menu_a_refrigerator #refrigerator_div1,
+#menu_a_washer #washer_div1,#menu_a_waterheater #waterheater_div1,#menu_a_kitchen #kitchen_div1{
+    width:30%;
+    height:15%;
+    background-color:#333;
+    border-radius:15px;
+    margin:0 auto;
+    position:relative;
+    top:75%;
+    color:white;
+    font-size:18px;
+    font-family:'微软雅黑';
+    text-align:center;
+}
+#menu_a_tv #tv_div1 span,#menu_a_aircondition #aircondition_div1 span,#menu_a_refrigerator #refrigerator_div1 span,
+#menu_a_washer #washer_div1 span,#menu_a_waterheater #waterheater_div1 span,#menu_a_kitchen #kitchen_div1 span{
+    position: relative;
+    top:2px;
+}
+/***图片中的透明黑色遮罩***/
+#menu_a_tv #tv_div2,#menu_a_aircondition #aircondition_div2,#menu_a_refrigerator #refrigerator_div2,
+#menu_a_washer #washer_div2,#menu_a_waterheater #waterheater_div2,#menu_a_kitchen #kitchen_div2{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    color:white;
+    font-size:20px;
+    font-family:'微软雅黑';
+    padding-top: 0%;
+    text-align:center;
+    letter-spacing:10pt;
+    display: none;
+}
+#menu_a_tv #tv_div2 span,#menu_a_aircondition #aircondition_div2 span,#menu_a_refrigerator #refrigerator_div2 span,
+#menu_a_washer #washer_div2 span,#menu_a_waterheater #waterheater_div2 span,#menu_a_kitchen #kitchen_div2 span{
+    position: relative;
+    top:40%;
+    left:10px;
+}
+/*电视*/
+#menu_a_tv{
+    background-image:url(../images/tv.jpg);
+}
+#menu_a_tv #tv_div1{
+}
+#menu_a_tv #tv_div2{
+}
+/*空调*/
+#menu_a_aircondition{
+    background-image:url(../images/aircondition.jpg);
+}
+#menu_a_aircondition #aircondition_div1{
+}
+#menu_a_aircondition #aircondition_div2{
+}
+/*冰箱*/
+#menu_a_refrigerator{
+    background-image:url(../images/refrigerator.jpg);
+}
+#menu_a_refrigerator #refrigerator_div1{
+}
+#menu_a_refrigerator #refrigerator_div2{
+}
+/*洗衣机*/
+#menu_a_washer{
+    background-image:url(../images/washer.jpg);
+}
+#menu_a_washer #washer_div1{
+}
+#menu_a_washer #washer_div2{
+}
+/*热水器*/
+#menu_a_waterheater{
+    background-image:url(../images/waterheater.jpg);
+}
+#menu_a_waterheater #waterheater_div1{
+}
+#menu_a_waterheater #waterheater_div2{
+}
+/*厨房大电*/
+#menu_a_kitchen{
+    background-image:url(../images/kitchen.jpg);
+}
+#menu_a_kitchen #kitchen_div1{
+}
+#menu_a_kitchen #kitchen_div2{
+}
+
+/***********************猜你喜欢***********************************/
+/*标题*/
+#yourLikesTitle{
+    width:200px;
+    margin: 0 auto;
+    position: relative;
+    top:100px;
+    font-family:"微软雅黑";
+    color:#555;
+    text-align: center;
+}
+#yourLikesTitle img{
+    width:30px;
+    height:30px;
+    position: relative;
+    top:10px;
+    margin: 0 5px;
+}
+/*承装你喜欢商品的容器*/
+#yourLikes{
+    width:80%;
+    height:305px;
+    margin: 0 auto;
+    position:relative;
+    top:150px;
+}
+/*4个商品*/
+.like-pd{
+    width:24%;
+    float:left;
+    background-color: white;
+    height: 305px;
+}
+.like-pd1,.like-pd3{
+    margin-right: 1.5%;
+}
+.like-pd2{
+    margin-right: 1%;
+}
+/*4个商品中的图片*/
+.like-pd img{
+    width:100%;
+    height: 230px;
+    margin: 0;
+}
+/*4个商品中的段落*/
+.like-pd p{
+    margin: 0;
+    width: 95%;
+    height: 35px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.like-pd .like-pd-p1{
+    line-height: 35px;
+    color: #ef7662;
+}
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+    /*****************猜你喜欢*******************************/
+    /*4个商品中的图片*/
+    .like-pd img{
+        width:100%;
+        height: 200px;
+        margin: 0;
+    }
+    /*4个商品中的段落*/
+    .like-pd p{
+        height: 50px;
+        font-size: 16px;
+    }
+    .like-pd .like-pd-p2{
+        font-size: 12px;
+    }
+
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /******************************图片形式的导航******************************/
+    #menu_pics{
+        height:380px;
+    }
+    #menu_pics a{
+        height: 180px;
+    }
+    /***图片中的黑色字幕***/
+    #menu_a_tv #tv_div1,#menu_a_aircondition #aircondition_div1,#menu_a_refrigerator #refrigerator_div1,
+    #menu_a_washer #washer_div1,#menu_a_waterheater #waterheater_div1,#menu_a_kitchen #kitchen_div1{
+        width:33%;
+        font-size:14px;
+    }
+    /***图片中的透明黑色遮罩***/
+    #menu_a_tv #tv_div2,#menu_a_aircondition #aircondition_div2,#menu_a_refrigerator #refrigerator_div2,
+    #menu_a_washer #washer_div2,#menu_a_waterheater #waterheater_div2,#menu_a_kitchen #kitchen_div2{
+        font-size:16px;
+    }
+
+    /*****************猜你喜欢*******************************/
+    /*承装你喜欢商品的容器*/
+    #yourLikes{
+        width:80%;
+        height:265px;
+        margin: 0 auto;
+        position:relative;
+        top:150px;
+    }
+    /*4个商品*/
+    .like-pd{
+        height: 265px;
+    }
+    /*4个商品中的图片*/
+    .like-pd img{
+        width:100%;
+        height: 160px;
+        margin: 0;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /*****************************标头下方的网站介绍图*********************************************/
+    /*隐藏超小设备以上的效果*/
+    #banner{
+        display: none;
+    }
+    /*超小设备效果*/
+    #banner_mobile{
+        display: block;
+        width:100%;
+        height:250px;
+        background:url(../images/home.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:bottom;
+        position: relative;
+        top:65px;
+    }
+    #banner_mobile span{
+        display: block;
+        color:#fdfdfd;
+        letter-spacing:5px;
+        font-family:'微软雅黑';
+        font-size:17px;
+        font-weight:500;
+        line-height:50px;
+        width:80%;
+        margin: 0 auto;
+        padding: 0 auto;
+        text-align: center;
+        position: relative;
+        top:60px;
+    }
+
+    /******************************图片形式的导航******************************/
+    #menu_pics{
+        width:100%;
+        height:250px;
+        top:100px;
+    }
+    #menu_pics a{
+        height: 120px;
+    }
+    /***图片中的黑色字幕***/
+    #menu_a_tv #tv_div1,#menu_a_aircondition #aircondition_div1,#menu_a_refrigerator #refrigerator_div1,
+    #menu_a_washer #washer_div1,#menu_a_waterheater #waterheater_div1,#menu_a_kitchen #kitchen_div1{
+        width:45%;
+        height:17%;
+        font-size:12px;
+    }
+    /***图片中的透明黑色遮罩***/
+    #menu_a_tv #tv_div2,#menu_a_aircondition #aircondition_div2,#menu_a_refrigerator #refrigerator_div2,
+    #menu_a_washer #washer_div2,#menu_a_waterheater #waterheater_div2,#menu_a_kitchen #kitchen_div2{
+        font-size:14px;
+    }
+
+    /*****************猜你喜欢*******************************/
+    /*标题*/
+    #yourLikesTitle{
+        position: relative;
+        top:120px;
+        font-size: 14px;
+    }
+    #yourLikesTitle img{
+        width:20px;
+        height:20px;
+        top:5px;
+        margin: 0 5px;
+    }
+    /*承装你喜欢商品的容器*/
+    #yourLikes{
+        width:100%;
+        height: 125px;
+    }
+    /*4个商品*/
+    .like-pd{
+        height: 125px;
+    }
+    /*4个商品中的图片*/
+    .like-pd img{
+        width:100%;
+        height: 90px;
+        margin: 0;
+    }
+    .like-pd .like-pd-p1{
+        height: 30px;
+        font-size: 14px;
+    }
+    .like-pd .like-pd-p2{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LevelHead家电购物-登录用户</title>
+    <!--css-header-->
+    <link rel="stylesheet" href="../css/css_header.css">
+    <!--css-Logined_NormalUser-->
+    <link rel="stylesheet" href="../css/css_Logined_NormalUser.css">
+</head>
+<body>
+<!--**************************************-->
+<!--网页上方固定不动的标头-->
+<div id="site-nav">
+    <div class="sn-container">
+        <!--网站logo-->
+        <a href='#' class="sn-logo fl"><b><i>LevelHead</i></b></a>
+        <!--展示下拉菜单的图标-->
+        <a href="#" class="sn-showmenu fr"><img src="../images/menu1.png" alt=""></a>
+        <!--快速导航菜单-->
+        <div class="sn-quick-menu fr">
+            <a href="Home.html" class="sn-home">首页</a>
+            <a href="Login.html" class="sn-login">登录</a>
+            <a href="#" class="sn-user"></a>
+            <a href="ShoppingCar.html" class="sn-chart">购物车</a>
+            <a href="#" class="sn-logout">退出</a>
+        </div>
+    </div>
+</div>
+
+
+<!--*********************用户信息表单*********************************-->
+<div id="all-content">
+    <!--信息区域 左右两部分 begin-->
+    <div class="info-content">
+        <!--信息区域左侧-->
+        <div class="info-left fl">
+            <img class='userOldPic' src=''/>
+            <!--上传图片和保存图片区域-->
+            <form class="infoForm" name="infoForm"
+                  action="../php/InfoUploadPicClient.php" method="post" target="_self"
+                  enctype="multipart/form-data">
+
+                <div class="userNewPic-content">上传图片<input type="file" name="userNewPic" class="userNewPic"></div>
+                <input type="submit" name="userNewPicSubmit" class="userNewPicSubmit" value="保存头像">
+
+            </form>
+        </div>
+        <!--信息区域右侧-->
+        <div class="info-right fr">
+            <form name="infoFormRight" class="infoFormRight"
+            action="../php/InfoUploadTextClient.php" target="_self" method="post">
+                <div class='title'><b style='font-size: 18px;'>您的基础信息:</b></div>
+                <div class='theUserName'>
+                用 户 名 :<input name="UserName" class='UserName' type='text'  disabled/>
+                </div>
+
+                <div class='theUserTel'>
+                绑定手机:<input name="UserTel" class='UserTel' type='text' />
+                </div>
+
+                <div class='theUserAddr'>
+                <span>收货地址:</span><textarea rows='3' cols='10' name="UserAddr" class='UserAddr'></textarea>
+                </div>
+
+                <div class='inforFormRightsubmit'>
+                <input type='submit' value='修改您的个人信息'>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--信息区域 左右两部分 end-->
+</div>
+
+<div id="bg_test" style="height: 100px;width: 100%;"></div>
+
+</body>
+
+<!--js-jquery-->
+<script src="../javascript/jquery-2.2.4.min.js"></script>
+<!--js-header-->
+<script src="../javascript/js_header.js"></script>
+<!--js-Logined_NormalUser-->
+<script src="../javascript/js_Logined_NormalUser.js"></script>
+
+</html>

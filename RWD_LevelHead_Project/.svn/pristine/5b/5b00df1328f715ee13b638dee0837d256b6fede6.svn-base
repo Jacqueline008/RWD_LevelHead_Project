@@ -1,0 +1,43 @@
+#footer{
+    /*background-color: white;*/
+    position:relative;
+    top:200px;
+    width:100%;
+    border-top:1px solid #e1e1e1;
+}
+.footer_container{
+    width:1170px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+.footer_container p{
+    margin: 0;
+    line-height: 30px;
+    font-family: '微软雅黑';
+    font-size: 14px;
+    color:#555;
+}
+
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    .footer_container{
+         width:970px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .footer_container{
+        width:750px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer_container{
+        width:100%;
+        padding: 0px 10px;
+    }
+    .footer_container p{
+        line-height: 20px;
+        font-size: 12px;
+    }
+}

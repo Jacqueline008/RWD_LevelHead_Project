@@ -1,0 +1,158 @@
+#bg_test{
+    position: relative;
+    top:250px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    background-image:url(../images/bg.jpg);
+}
+#footer{
+
+}
+
+@charset "utf-8";
+/****************************************************************************/
+/*上方商品信息*/
+/*商品信息容器*/
+#product_info_container{
+    width:950px;
+    height:470px;
+    margin:0 auto;
+    position:relative;
+    top:130px;
+}
+/*商品信息容器的左侧的竖着的照片列表*/
+#product_info_left{
+    width:75px;
+    height:470px;
+    float:left;
+}
+#product_info_left #pic1{
+    display:block;
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic1 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic1 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.3;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/**/
+#product_info_left #pic2{
+    display:block;
+    width:75px;
+    height:75px;
+    margin-top:20px;
+}
+#product_info_left #pic2 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic2 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/**/
+#product_info_left #pic3{
+    display:block;
+    width:75px;
+    height:75px;
+    margin-top:20px;
+}
+#product_info_left #pic3 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic3 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/**/
+#product_info_left #pic4{
+    display:block;
+    width:75px;
+    height:75px;
+    margin-top:20px;
+}
+#product_info_left #pic4 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic4 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/**/
+#product_info_left #pic5{
+    display:block;
+    width:75px;
+    height:75px;
+    margin-top:20px;
+}
+#product_info_left #pic5 img{
+    width:75px;
+    height:75px;
+}
+#product_info_left #pic5 div{
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.4;
+    position:relative;
+    top:-78px;
+    display:none;
+}
+/*商品信息容器的中间的照片展示区域*/
+#product_info_mid{
+    width:430px;
+    height:470px;
+    float:left;
+    margin-left:15px;
+}
+#product_info_mid img{
+    width:430px;
+    height:470px;
+}
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+}
+
+
