@@ -1,6 +1,6 @@
 # RWD_LevelHead_Project概要设计文档
 ****
-##### 备注:        大三下NIIT学期项目
+##### 备注:        购物网站（大三下学期）--个人单独完成制作
 ##### 作者:        李艺鸣
 ##### 项目在线地址: http://182.254.152.14/phpStorm_Project/RWD_LevelHead_Project/html/Home.html
 ##### 项目讲解视频在线观看: (优酷) 
