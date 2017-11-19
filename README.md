@@ -3,8 +3,8 @@
 ##### 备注:        购物网站（大三下学期项目）--个人单独完成制作
 ##### 作者:        李艺鸣
 ##### 项目在线地址: http://182.254.152.14/phpStorm_Project/RWD_LevelHead_Project/html/Home.html
-##### 项目讲解视频在线观看: (优酷) 
-##### 项目讲解视频在线观看: (百度网盘) 
+##### 项目讲解视频在线观看: (土豆网)http://video.tudou.com/v/XMjk4NzY0Nzg1Mg==.html?spm=a2h3j.8428770.3416059.1 
+##### 项目讲解视频在线观看: (百度网盘) http://pan.baidu.com/s/1jHNWl98
 ****
 
 #### 网站概述
