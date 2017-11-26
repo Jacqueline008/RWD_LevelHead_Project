@@ -24,3 +24,8 @@ HTML5 CSS JavaScript jquery bootstrap php mysql
 ```
 响应式体验 前后台分离开发 设计模式思想
 ```
+
+### 项目运行截图
+***
+#### 启动界面
+<img src="https://github.com/Jacqueline008/MovieApp/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/1-%E5%90%AF%E5%8A%A8%E9%A1%B5%E9%9D%A2.JPG?raw=true">
