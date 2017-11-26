@@ -27,5 +27,14 @@ HTML5 CSS JavaScript jquery bootstrap php mysql
 
 ### 项目运行截图
 ***
-#### 启动界面
-<img src="https://github.com/Jacqueline008/MovieApp/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/1-%E5%90%AF%E5%8A%A8%E9%A1%B5%E9%9D%A2.JPG?raw=true">
+#### 首页界面
+<img src="https://github.com/Jacqueline008/RWD_LevelHead_Project/blob/master/%E5%AE%B6%E7%94%B5%E9%94%80%E5%94%AE%E9%A1%B9%E7%9B%AE%E6%88%AA%E5%9B%BE/1-%E9%A6%96%E9%A1%B5.png?raw=true">
+
+#### 电视列表界面
+<img src="https://github.com/Jacqueline008/RWD_LevelHead_Project/blob/master/%E5%AE%B6%E7%94%B5%E9%94%80%E5%94%AE%E9%A1%B9%E7%9B%AE%E6%88%AA%E5%9B%BE/2-%E7%94%B5%E8%A7%86%E5%88%97%E8%A1%A8.png?raw=true">
+
+#### 电视页面
+<img src="https://github.com/Jacqueline008/RWD_LevelHead_Project/blob/master/%E5%AE%B6%E7%94%B5%E9%94%80%E5%94%AE%E9%A1%B9%E7%9B%AE%E6%88%AA%E5%9B%BE/3-%E7%94%B5%E8%A7%86%E9%A1%B5%E9%9D%A2.png?raw=true">
+
+#### 电视页面-移动版界面
+<img src="https://github.com/Jacqueline008/RWD_LevelHead_Project/blob/master/%E5%AE%B6%E7%94%B5%E9%94%80%E5%94%AE%E9%A1%B9%E7%9B%AE%E6%88%AA%E5%9B%BE/4-%E7%94%B5%E8%A7%86%E9%A1%B5%E9%9D%A2-%E7%A7%BB%E5%8A%A8%E7%89%88.JPG?raw=true">
